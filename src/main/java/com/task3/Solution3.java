@@ -31,21 +31,23 @@ package com.task3;
 //s consists of English letters, digits, symbols and spaces.
 
 class Solution3 {
- public int lengthOfLongestSubstring(String s) {
-     int len; // length of the longest substring without repeating characters
-     if(s == null || (len = s.length()) == 0) return 0; // edge case
-     int preP = 0, max = 0; // preP is the index of the previous character
-     int [] hash = new int [128]; // 
-     for (int i = 0; i < len; i++) { 
-         char c = s.charAt(i); // current character
-         if (hash[c] > preP) {   // if the current character is already in the substring
-             preP = hash[c]; // update preP
-         }
-         int l = i - preP + 1; // length of the current substring
-         hash[c] = i + 1; // update hash with the current character
-         if (l > max)  
-             max = l; // update max
-     }
-     return max; 
- }
+	
+	public int lengthOfLongestSubstring(String s) {
+		int len; // length of the longest substring without repeating characters
+		if (s == null || (len = s.length()) == 0)
+			return 0; // edge case
+		int preP = 0, max = 0; // preP is the index of the previous character
+		int[] hash = new int[128]; //
+		for (int i = 0; i < len; i++) {
+			char c = s.charAt(i); // current character
+			if (hash[c] > preP) { // if the current character is already in the substring
+				preP = hash[c]; // update preP
+			}
+			int l = i - preP + 1; // length of the current substring
+			hash[c] = i + 1; // update hash with the current character
+			if (l > max)
+				max = l; // update max
+		}
+		return max;
+	}
 }
