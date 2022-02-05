@@ -1,8 +1,10 @@
-package com.task3;
+package com.task03;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import com.task03.Solution3;
 
 public class Solution3Test {
 	

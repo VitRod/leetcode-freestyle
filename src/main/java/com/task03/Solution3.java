@@ -1,4 +1,4 @@
-package com.task3;
+package com.task03;
 
 //3. Longest Substring Without Repeating Characters
 //Medium
