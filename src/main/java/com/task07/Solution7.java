@@ -35,6 +35,5 @@ class Solution7 {
 			res = res * 10 + x % 10;
 		// cast to int to avoid overflow
 		return res > Integer.MAX_VALUE || res < Integer.MIN_VALUE ? 0 : (int) res;
-
 	}
 }
