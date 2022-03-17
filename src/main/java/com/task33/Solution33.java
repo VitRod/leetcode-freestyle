@@ -41,6 +41,7 @@ package com.task33;
 
 
 public class Solution33 {
+	
 	public int search(int[] nums, int target) {
 		// `left` is the index of the first element of the array
 		        int left = 0; 
