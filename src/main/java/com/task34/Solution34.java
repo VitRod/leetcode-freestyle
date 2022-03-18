@@ -31,6 +31,7 @@ package com.task34;
 //-109 <= target <= 109
 
 public class Solution34 {
+	
 	public int[] searchRange(int[] nums, int target) {
 		int[] result = new int[2];
 		result[0] = findFirst(nums, target);
