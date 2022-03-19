@@ -34,5 +34,20 @@ package com.task35;
 
 
 public class Solution35 {
-
+	public int searchInsert(int[] nums, int target) {
+        // `>>` is the same as `/2`
+        int left = 0, right = nums.length - 1, mid = (right + left)>>1; 
+        while(left <= right){ // left <= right is important
+            if(target <=nums[mid])   // target is in the left part
+                right = mid -1;  // right is the last element in the left part          
+            else
+                left = mid +1; //  left is the left boundary
+                mid = (right + left)>>1; // mid is the new mid
+                
+                
+        }
+         return left; // left is the index of the target
+        
+    }
 }
+
