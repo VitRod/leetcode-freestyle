@@ -55,34 +55,35 @@ import java.util.List;
 public class Solution36 {
 
 	public boolean isValidSudoku(char[][] board) {
-		List<List<Character>> rows = new ArrayList<>();
-		List<List<Character>> cols = new ArrayList<>();
-		List<List<Character>> boxes = new ArrayList<>();
-		for (int i = 0; i < 9; i++) {
-			rows.add(new ArrayList<>());
-			cols.add(new ArrayList<>());
-			boxes.add(new ArrayList<>());
-		}
-		for (int i = 0; i < 9; i++) {
-			for (int j = 0; j < 9; j++) {
-				if (board[i][j] != '.') {
-					char c = board[i][j];
-					if (rows.get(i).contains(c)) {
-						return false;
-					}
-					rows.get(i).add(c);
-					if (cols.get(j).contains(c)) {
-						return false;
-					}
-					cols.get(j).add(c);
-					int boxIndex = (i / 3) * 3 + j / 3;
-					if (boxes.get(boxIndex).contains(c)) {
-						return false;
-					}
-					boxes.get(boxIndex).add(c);
-				}
-			}
-		}
-		return true;
-	}
+        List<List<Character>> rows = new ArrayList<>(); // rows` is a list of lists of characters
+        List<List<Character>> cols = new ArrayList<>();//  cols` is a list of lists of characters
+        List<List<Character>> boxes = new ArrayList<>(); // boxes` is a list of lists of characters
+        for (int i = 0; i < 9; i++) { //  for each row
+            rows.add(new ArrayList<>()); //  add a new list to rows
+            cols.add(new ArrayList<>()); //     add a new list to cols
+            boxes.add(new ArrayList<>()); //    add a new list to boxes
+        }
+        for (int i = 0; i < 9; i++) { //    for each row
+            for (int j = 0; j < 9; j++) { //    for each column
+                if (board[i][j] != '.') { //    if the character is not a dot
+                    char c = board[i][j]; //    get the character
+                    if (rows.get(i).contains(c)) { //    if the character is in the row
+                        return false; //    return false
+                    }
+                    rows.get(i).add(c); //    add the character to the row
+                    if (cols.get(j).contains(c)) { //    if the character is in the column
+                        return false; //    return false
+                    }
+                    cols.get(j).add(c); //    add the character to the column
+                    int boxIndex = (i / 3) * 3 + j / 3; //    get the box index
+                    if (boxes.get(boxIndex).contains(c)) { //    if the character is in the box
+                        return false; //    return false
+                    }
+                    boxes.get(boxIndex).add(c); //    add the character to the box
+                }
+            }
+        }
+        return true; //    return true
+    }
 }
+  
