@@ -56,5 +56,37 @@ import java.util.List;
 // board[i][j] is a digit 1-9 or '.'.
 
 public class Solution36 {
-
+	
+	public boolean isValidSudoku(char[][] board) {
+        List<List<Character>> rows = new ArrayList<>();
+        List<List<Character>> cols = new ArrayList<>();
+        List<List<Character>> boxes = new ArrayList<>();
+        for (int i = 0; i < 9; i++) {
+            rows.add(new ArrayList<>());
+            cols.add(new ArrayList<>());
+            boxes.add(new ArrayList<>());
+        }
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (board[i][j] != '.') {
+                    char c = board[i][j];
+                    if (rows.get(i).contains(c)) {
+                        return false;
+                    }
+                    rows.get(i).add(c);
+                    if (cols.get(j).contains(c)) {
+                        return false;
+                    }
+                    cols.get(j).add(c);
+                    int boxIndex = (i / 3) * 3 + j / 3;
+                    if (boxes.get(boxIndex).contains(c)) {
+                        return false;
+                    }
+                    boxes.get(boxIndex).add(c);
+                }
+            }
+        }
+        return true;
+    }
 }
+  
