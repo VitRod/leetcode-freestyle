@@ -34,6 +34,7 @@ package com.task37;
 //It is guaranteed that the input board has only one solution.
 
 public class Solution37 {
+	
 	public void solveSudoku(char[][] board) {
 		if (board == null || board.length == 0) {
 			return;
