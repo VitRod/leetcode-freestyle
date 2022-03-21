@@ -12,10 +12,7 @@ package com.task37;
 //Each of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.
 //The '.' character indicates empty cells.
 
-
-
 //Example 1:
-
 
 //Input: board = [["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],
 //[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],
@@ -29,9 +26,6 @@ package com.task37;
 //["3","4","5","2","8","6","1","7","9"]]
 //Explanation: The input board is shown above and the only valid solution is shown below:
 
-
-
-
 //Constraints:
 
 //board.length == 9
@@ -41,46 +35,48 @@ package com.task37;
 
 public class Solution37 {
 	public void solveSudoku(char[][] board) {
-        if (board == null || board.length == 0) { 
-            return;
-        }
-        solve(board);
-    }
+		if (board == null || board.length == 0) {
+			return;
+		}
+		solve(board);
+	}
 
-    private boolean solve(char[][] board) {
-        for (int i = 0; i < board.length; i++) { //`i` is row
-            for (int j = 0; j < board[0].length; j++) { //`j` is col
-                if (board[i][j] == '.') { //if there is a '.', we need to try all possible values
-                    for (char c = '1'; c <= '9'; c++) { //`c` is the value we are trying
-                        if (isValid(board, i, j, c)) { //if it is valid, we assign it to the board
-                            board[i][j] = c; //assign the value to the board
-                            if (solve(board)) { //if it is valid, we recursively call solve
-                                return true; //if it is valid, we return true
-                            }
-                            board[i][j] = '.'; //if it is not valid, we reset the value to '.'
-                        }
-                    }
-                    return false; //if we tried all possible values and none of them is valid, we return false
-                }
-            }
-        }
-        return true; //if we tried all possible values and none of them is valid, we return false
-    }
-     
-    private boolean isValid(char[][] board, int row, int col, char c) {
-        for (int i = 0; i < 9; i++) { //`i` is row
-            if (board[i][col] != '.' && board[i][col] == c) { //if the value is not '.' and the value is the same as c, we return false
-                return false;  
-            }
-            if (board[row][i] != '.' && board[row][i] == c) { //if the value is not '.' and the value is the same as c, we return false
-                return false;  
-            }
+	private boolean solve(char[][] board) {
+		for (int i = 0; i < board.length; i++) { // `i` is row
+			for (int j = 0; j < board[0].length; j++) { // `j` is col
+				if (board[i][j] == '.') { // if there is a '.', we need to try all possible values
+					for (char c = '1'; c <= '9'; c++) { // `c` is the value we are trying
+						if (isValid(board, i, j, c)) { // if it is valid, we assign it to the board
+							board[i][j] = c; // assign the value to the board
+							if (solve(board)) { // if it is valid, we recursively call solve
+								return true; // if it is valid, we return true
+							}
+							board[i][j] = '.'; // if it is not valid, we reset the value to '.'
+						}
+					}
+					return false; // if we tried all possible values and none of them is valid, we return false
+				}
+			}
+		}
+		return true; // if we tried all possible values and none of them is valid, we return false
+	}
+
+	private boolean isValid(char[][] board, int row, int col, char c) {
+		for (int i = 0; i < 9; i++) { // `i` is row
+			if (board[i][col] != '.' && board[i][col] == c) { // if the value is not '.' and the value is the same as c,
+																// we return false
+				return false;
+			}
+			if (board[row][i] != '.' && board[row][i] == c) { // if the value is not '.' and the value is the same as c,
+																// we return false
+				return false;
+			}
 //if the value is not '.' and the value is the same as c, we return false
-            if (board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] != '.' && board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c) { 
-                return false;  
-            }
-        }
-        return true; //if we tried all possible values and none of them is valid, we return false
-    }
+			if (board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] != '.'
+					&& board[3 * (row / 3) + i / 3][3 * (col / 3) + i % 3] == c) {
+				return false;
+			}
+		}
+		return true; // if we tried all possible values and none of them is valid, we return false
+	}
 }
-    
