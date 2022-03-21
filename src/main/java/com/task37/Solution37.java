@@ -62,6 +62,7 @@ public class Solution37 {
 		return true; // if we tried all possible values and none of them is valid, we return false
 	}
 
+	
 	private boolean isValid(char[][] board, int row, int col, char c) {
 		for (int i = 0; i < 9; i++) { // `i` is row
 			if (board[i][col] != '.' && board[i][col] == c) { // if the value is not '.' and the value is the same as c,
