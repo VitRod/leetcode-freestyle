@@ -15,10 +15,7 @@ package com.task38;
 
 //For example, the saying and conversion for digit string "3322251":
 
-
 //Given a positive integer n, return the nth term of the count-and-say sequence.
-
-
 
 //Example 1:
 
@@ -35,31 +32,29 @@ package com.task38;
 //countAndSay(3) = say "11" = two 1's = "21"
 //countAndSay(4) = say "21" = one 2 + one 1 = "12" + "11" = "1211"
 
-
 //Constraints:
 
 //1 <= n <= 30
 
 public class Solution38 {
-	
-	public String countAndSay(int n) {
-        String str = "1";
-        while (--n > 0) {
-            int times = 1;
-            StringBuilder sb = new StringBuilder();
-            char[] chars = str.toCharArray();
-            int len = chars.length;
-            for (int j = 1; j < len; j++) {
-                if (chars[j - 1] == chars[j]) {
-                    times++;
-                } else {
-                    sb.append(times).append(chars[j - 1]);
-                    times = 1;
-                }
-            }
-            str = sb.append(times).append(chars[len - 1]).toString();
-        }
-        return str;
-    }
-}
 
+	public String countAndSay(int n) {
+		String str = "1";
+		while (--n > 0) {
+			int times = 1;
+			StringBuilder sb = new StringBuilder();
+			char[] chars = str.toCharArray();
+			int len = chars.length;
+			for (int j = 1; j < len; j++) {
+				if (chars[j - 1] == chars[j]) {
+					times++;
+				} else {
+					sb.append(times).append(chars[j - 1]);
+					times = 1;
+				}
+			}
+			str = sb.append(times).append(chars[len - 1]).toString();
+		}
+		return str;
+	}
+}
