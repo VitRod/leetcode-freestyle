@@ -1,6 +1,5 @@
 package com.task39;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +15,6 @@ import java.util.List;
 
 // It is guaranteed that the number of unique combinations that sum up to target 
 // is less than 150 combinations for the given input.
-
- 
 
 // Example 1:
 
@@ -35,7 +32,6 @@ import java.util.List;
 
 // Input: candidates = [2], target = 1
 // Output: []
- 
 
 // Constraints:
 
@@ -44,7 +40,29 @@ import java.util.List;
 // All elements of candidates are distinct.
 // 1 <= target <= 500
 
-
 public class Solution39 {
+	public List<List<Integer>> combinationSum(int[] candidates, int target) {
+		List<List<Integer>> result = new ArrayList<>();
+		if (candidates == null || candidates.length == 0) {
+			return result;
+		}
+		List<Integer> list = new ArrayList<>();
+		helper(result, list, candidates, target, 0);
+		return result;
+	}
 
+	private void helper(List<List<Integer>> result, List<Integer> list, int[] candidates, int target, int start) {
+		if (target == 0) {
+			result.add(new ArrayList<>(list));
+			return;
+		}
+		if (target < 0) {
+			return;
+		}
+		for (int i = start; i < candidates.length; i++) {
+			list.add(candidates[i]);
+			helper(result, list, candidates, target - candidates[i], i);
+			list.remove(list.size() - 1);
+		}
+	}
 }
