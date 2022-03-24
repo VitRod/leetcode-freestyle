@@ -14,8 +14,6 @@ import java.util.List;
 
 // Note: The solution set must not contain duplicate combinations.
 
- 
-
 // Example 1:
 
 // Input: candidates = [10,1,2,7,6,1,5], target = 8
@@ -34,7 +32,6 @@ import java.util.List;
 // [1,2,2],
 // [5]
 // ]
- 
 
 // Constraints:
 
@@ -44,28 +41,28 @@ import java.util.List;
 
 public class Solution40 {
 	public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        List<List<Integer>> result = new ArrayList<>();
-        Arrays.sort(candidates);
-        combinationSum2(candidates, target, 0, new ArrayList<>(), result);
-        return result;
-    }
+		List<List<Integer>> result = new ArrayList<>();
+		Arrays.sort(candidates);
+		combinationSum2(candidates, target, 0, new ArrayList<>(), result);
+		return result;
+	}
 
-    private void combinationSum2(int[] candidates, int target, int start, List<Integer> list, List<List<Integer>> result) {
-        if (target == 0) {
-            result.add(new ArrayList<>(list));
-            return;
-        }
-        for (int i = start; i < candidates.length; i++) {
-            if (i > start && candidates[i] == candidates[i - 1]) {
-                continue;
-            }
-            if (candidates[i] > target) {
-                break;
-            }
-            list.add(candidates[i]);
-            combinationSum2(candidates, target - candidates[i], i + 1, list, result);
-            list.remove(list.size() - 1);
-        }
-    }
+	private void combinationSum2(int[] candidates, int target, int start, List<Integer> list,
+			List<List<Integer>> result) {
+		if (target == 0) {
+			result.add(new ArrayList<>(list));
+			return;
+		}
+		for (int i = start; i < candidates.length; i++) {
+			if (i > start && candidates[i] == candidates[i - 1]) {
+				continue;
+			}
+			if (candidates[i] > target) {
+				break;
+			}
+			list.add(candidates[i]);
+			combinationSum2(candidates, target - candidates[i], i + 1, list, result);
+			list.remove(list.size() - 1);
+		}
+	}
 }
-
