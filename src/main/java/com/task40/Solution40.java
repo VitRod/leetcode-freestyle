@@ -40,6 +40,7 @@ import java.util.List;
 // 1 <= target <= 30
 
 public class Solution40 {
+	
 	public List<List<Integer>> combinationSum2(int[] candidates, int target) {
 		List<List<Integer>> result = new ArrayList<>();
 		Arrays.sort(candidates);
