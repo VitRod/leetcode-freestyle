@@ -29,4 +29,30 @@ package com.task42;
 
 public class Solution42 {
 
-}
+	 public int trap(int[] height) {
+	        int left = 0; // left pointer
+	        int right = height.length - 1; // right pointer
+	        int leftMax = 0; // left max height
+	        int rightMax = 0; // right max height
+	        int result = 0; // result
+	        while (left < right) { // while left pointer is smaller than right pointer
+	            if (height[left] < height[right]) { // if left height is smaller than right height
+	                if (height[left] >= leftMax) { // if left height is larger than or equal to left max height
+	                    leftMax = height[left]; // update left max height
+	                } else {
+	                    result += leftMax - height[left]; // add water trapped by left height
+	                }
+	                left++; //  move left pointer
+	            } else {
+	                if (height[right] >= rightMax) { // if right height is larger than or equal to right max height
+	                    rightMax = height[right]; // update right max height
+	                } else {
+	                    result += rightMax - height[right]; // add water trapped by right height
+	                }
+	                right--; // move right pointer
+	            }
+	        }
+	        return result; // return result
+	    }
+	}
+	    
