@@ -6,9 +6,15 @@ import org.junit.jupiter.api.Test;
 
 class Solution43Test {
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
+	 Solution43 solution = new Solution43();
+	   
+	    @Test
+	    public void test1() {
+	        assertEquals("6", solution.multiply("2", "3"));
+	    }
 
-}
+	    @Test
+	    public void test2() {
+	        assertEquals("56088", solution.multiply("123", "456"));
+	    }
+	}
