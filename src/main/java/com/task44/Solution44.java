@@ -47,7 +47,8 @@ public class Solution44 {
 	            for (int j = 1; j <= n; j++) { // iterate over pattern
 	                if (p.charAt(j - 1) == '*') { // if pattern is '*'
 	                    dp[i][j] = dp[i - 1][j] || dp[i][j - 1]; // then dp[i][j] = dp[i-1][j] || dp[i][j-1]
-	                } else if (p.charAt(j - 1) == '?' || s.charAt(i - 1) == p.charAt(j - 1)) { // if pattern is '?' or s[i-1] == p[j-1]
+	                    // if pattern is '?' or s[i-1] == p[j-1]
+	                } else if (p.charAt(j - 1) == '?' || s.charAt(i - 1) == p.charAt(j - 1)) { 
 	                    dp[i][j] = dp[i - 1][j - 1]; // then dp[i][j] = dp[i-1][j-1]
 	                }
 	            }
