@@ -11,7 +11,6 @@ package com.task44;
 //The matching should cover the entire input string (not partial).
 
 //Example 1:
-
 //Input: s = "aa", p = "a"
 //Output: false
 //Explanation: "a" does not match the entire string "aa".
@@ -34,25 +33,25 @@ package com.task44;
 
 public class Solution44 {
 
-	public boolean isMatch(String s, String p) {
-		int m = s.length();
-		int n = p.length();
-		boolean[][] dp = new boolean[m + 1][n + 1];
-		dp[0][0] = true;
-		for (int i = 1; i <= n; i++) {
-			if (p.charAt(i - 1) == '*') {
-				dp[0][i] = dp[0][i - 1];
-			}
-		}
-		for (int i = 1; i <= m; i++) {
-			for (int j = 1; j <= n; j++) {
-				if (p.charAt(j - 1) == '*') {
-					dp[i][j] = dp[i - 1][j] || dp[i][j - 1];
-				} else if (p.charAt(j - 1) == '?' || s.charAt(i - 1) == p.charAt(j - 1)) {
-					dp[i][j] = dp[i - 1][j - 1];
-				}
-			}
-		}
-		return dp[m][n];
+	 public boolean isMatch(String s, String p) {
+	        int m = s.length(); // string length
+	        int n = p.length(); // pattern length
+	        boolean[][] dp = new boolean[m + 1][n + 1]; // dp[i][j] = true if s[0..i-1] matches p[0..j-1]
+	        dp[0][0] = true; // empty string matches empty pattern
+	        for (int i = 1; i <= n; i++) { // initialize first row
+	            if (p.charAt(i - 1) == '*') { // if pattern is '*'
+	                dp[0][i] = dp[0][i - 1]; // then dp[0][i] = dp[0][i-1]
+	            }
+	        }
+	        for (int i = 1; i <= m; i++) { // iterate over string
+	            for (int j = 1; j <= n; j++) { // iterate over pattern
+	                if (p.charAt(j - 1) == '*') { // if pattern is '*'
+	                    dp[i][j] = dp[i - 1][j] || dp[i][j - 1]; // then dp[i][j] = dp[i-1][j] || dp[i][j-1]
+	                } else if (p.charAt(j - 1) == '?' || s.charAt(i - 1) == p.charAt(j - 1)) { // if pattern is '?' or s[i-1] == p[j-1]
+	                    dp[i][j] = dp[i - 1][j - 1]; // then dp[i][j] = dp[i-1][j-1]
+	                }
+	            }
+	        }
+	        return dp[m][n]; // return dp[m][n]
+	    }
 	}
-}
