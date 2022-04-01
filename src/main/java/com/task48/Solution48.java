@@ -31,4 +31,16 @@ package com.task48;
 
 public class Solution48 {
 
-}
+	 public void rotate(int[][] matrix) {
+	        int n = matrix.length; // n x n matrix
+	        for(int i=0;i<n/2;i++){ // for each layer
+	            for(int j=i;j<n-i-1;j++){ // for each element in the layer
+	                int temp = matrix[i][j]; // store the top element
+	                matrix[i][j] = matrix[n-1-j][i]; // top = left
+	                matrix[n-1-j][i] = matrix[n-1-i][n-1-j]; // left = bottom
+	                matrix[n-1-i][n-1-j] = matrix[j][n-1-i]; // bottom = right
+	                matrix[j][n-1-i] = temp; // right = top
+	            }
+	        }
+	    }
+	}
