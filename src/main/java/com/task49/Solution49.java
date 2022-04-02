@@ -14,8 +14,6 @@ import java.util.Map;
 // An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
 //  typically using all the original letters exactly once.
 
- 
-
 // Example 1:
 
 // Input: strs = ["eat","tea","tan","ate","nat","bat"]
@@ -28,7 +26,6 @@ import java.util.Map;
 
 // Input: strs = ["a"]
 // Output: [["a"]]
- 
 
 // Constraints:
 
@@ -37,23 +34,22 @@ import java.util.Map;
 // strs[i] consists of lowercase English letters.
 
 public class Solution49 {
-	
-	public List<List<String>> groupAnagrams(String[] strs) {
-        List<List<String>> result = new ArrayList<>(); // result
-        Map<String, List<String>> map = new HashMap<>(); // map
-        for (String str : strs) { // for each string
-            char[] chars = str.toCharArray(); // convert to char array
-            Arrays.sort(chars); // sort
-            String key = String.valueOf(chars); // convert back to string
-            if (!map.containsKey(key)) { // if key not in map
-                map.put(key, new ArrayList<>()); // add key to map
-            }
-            map.get(key).add(str); // add string to map
-        }
-        for (List<String> list : map.values()) { // for each list
-            result.add(list); // add list to result
-        }
-        return result; // return result
-    }
-}
 
+	public List<List<String>> groupAnagrams(String[] strs) {
+		List<List<String>> result = new ArrayList<>(); // result
+		Map<String, List<String>> map = new HashMap<>(); // map
+		for (String str : strs) { // for each string
+			char[] chars = str.toCharArray(); // convert to char array
+			Arrays.sort(chars); // sort
+			String key = String.valueOf(chars); // convert back to string
+			if (!map.containsKey(key)) { // if key not in map
+				map.put(key, new ArrayList<>()); // add key to map
+			}
+			map.get(key).add(str); // add string to map
+		}
+		for (List<String> list : map.values()) { // for each list
+			result.add(list); // add list to result
+		}
+		return result; // return result
+	}
+}
