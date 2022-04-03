@@ -27,5 +27,8 @@ package com.task50;
 //-104 <= xn <= 104
 
 public class Solution50 {
-
+	
+	public double myPow(double x, int n) {
+        return Math.pow(x, n);
+}
 }
