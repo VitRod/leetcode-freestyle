@@ -36,4 +36,20 @@ package com.task53;
 
 public class Solution53 {
 
+	public int maxSubArray(int[] nums) {
+        int max = nums[0]; // max sum
+        int sum = 0; // current sum
+        for (int i = 0; i < nums.length; i++) { // for each element
+            sum += nums[i]; // add to current sum
+            if (sum > max) { // if current sum is greater than max sum
+                max = sum; // update max sum
+            }
+            if (sum < 0) { // if current sum is less than 0
+                sum = 0; // reset sum to 0
+            }
+        }
+        return max; //  return max sum
+
+    }
 }
+
