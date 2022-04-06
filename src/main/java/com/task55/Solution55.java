@@ -30,6 +30,7 @@ package com.task55;
 
 
 public class Solution55 {
+	
 	public boolean canJump(int[] nums) {
         int max = 0; // max distance we can jump
         for (int i = 0; i < nums.length; i++) { // for each index
