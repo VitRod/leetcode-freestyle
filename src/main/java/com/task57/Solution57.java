@@ -40,5 +40,27 @@ import java.util.Arrays;
 //0 <= start <= end <= 105
 
 public class Solution57 {
-
+	
+	public int[][] insert(int[][] intervals, int[] newInterval) {
+        if (intervals == null || intervals.length == 0) {
+           return new int[][] {newInterval};
+       }
+       int[][] result = new int[intervals.length + 1][2];
+       int i = 0;
+       int j = 0;
+       while (i < intervals.length && intervals[i][1] < newInterval[0]) {
+           result[j++] = intervals[i++];
+       }
+       while (i < intervals.length && intervals[i][0] <= newInterval[1]) {
+           newInterval[0] = Math.min(intervals[i][0], newInterval[0]);
+           newInterval[1] = Math.max(intervals[i][1], newInterval[1]);
+           i++;
+       }
+       result[j++] = newInterval;
+       while (i < intervals.length) {
+           result[j++] = intervals[i++];
+       }
+       return Arrays.copyOf(result, j);
+   }
 }
+
