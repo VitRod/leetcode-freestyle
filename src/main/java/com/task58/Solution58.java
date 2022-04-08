@@ -31,6 +31,7 @@ package com.task58;
 //There will be at least one word in s.
 
 public class Solution58 {
+	
 	public int lengthOfLastWord(String s) {
 		int p = s.length() - 1;
 		while (p >= 0 && s.charAt(p) == ' ')
