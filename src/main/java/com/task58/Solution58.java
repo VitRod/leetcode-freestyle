@@ -8,8 +8,6 @@ package com.task58;
 
 //A word is a maximal substring consisting of non-space characters only.
 
-
-
 //Example 1:
 
 //Input: s = "Hello World"
@@ -26,7 +24,6 @@ package com.task58;
 //Output: 6
 //Explanation: The last word is "joyboy" with length 6.
 
-
 //Constraints:
 
 //1 <= s.length <= 104
@@ -35,10 +32,12 @@ package com.task58;
 
 public class Solution58 {
 	public int lengthOfLastWord(String s) {
-        int p = s.length() - 1;
-        while(p >=0 && s.charAt(p) == ' ') p--;
-        int end = p;
-        while(p >= 0 && s.charAt(p) != ' ') p--;
-       return end - p;
-    }
+		int p = s.length() - 1;
+		while (p >= 0 && s.charAt(p) == ' ')
+			p--;
+		int end = p;
+		while (p >= 0 && s.charAt(p) != ' ')
+			p--;
+		return end - p;
+	}
 }
