@@ -15,7 +15,6 @@ package com.task59;
 //Output: [[1]]
 
 //Constraints:
-
 //1 <= n <= 20
 
 public class Solution59 {
