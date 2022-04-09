@@ -7,7 +7,6 @@ package com.task59;
 //with elements from 1 to n2 in spiral order.
 
 //Example 1:
-
 //Input: n = 3
 //Output: [[1,2,3],[8,9,4],[7,6,5]]
 //Example 2:
