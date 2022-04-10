@@ -44,4 +44,23 @@ package com.task66;
 
 public class Solution66 {
 
+	public int[] plusOne(int[] digits) {
+        int p = digits.length -1; // p is the index of the last digit
+        if(digits[p] < 9){ // if the last digit is less than 9, we can just increment it
+            digits[p] = ++digits[p]; // increment the last digit
+        }else{
+            do{
+                digits[p--] = 0; // if the last digit is 9, we need to set it to 0 and move to the previous digit
+                
+            }while(p>=0 && digits[p] == 9); // if the previous digit is 9, we need to set it to 0 and move to the previous digit
+            if(digits[0] != 0){ // if the first digit is not 0, we can just increment it
+                ++digits[p]; // increment the last digit
+            }else{
+              digits = new int[digits.length+1];  // if the first digit is 0, we need to add a new digit to the front
+                digits[0] = 1; // set the first digit to 1
+            }
+            
+        }
+        return digits; // return the new array
+    }
 }
