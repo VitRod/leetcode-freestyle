@@ -10,7 +10,6 @@ package com.task66;
 //Increment the large integer by one and return the resulting array of digits.
 
 //Example 1:
-
 //Input: digits = [1,2,3]
 //Output: [1,2,4]
 //Explanation: The array represents the integer 123.
