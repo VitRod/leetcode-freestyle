@@ -21,6 +21,7 @@ package com.task67;
 //Each string does not contain leading zeros except for the zero itself.
 
 public class Solution57 {
+	
 	public String addBinary(String a, String b) {
 		StringBuilder sb = new StringBuilder(); // `StringBuilder` is faster than `String`
 		int carry = 0, p1 = a.length() - 1, p2 = b.length() - 1; // p1, p2 are the pointers of a, b
