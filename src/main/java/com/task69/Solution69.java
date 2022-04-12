@@ -30,5 +30,10 @@ package com.task69;
 //0 <= x <= 231 - 1
 
 public class Solution69 {
-
+	public int mySqrt(int x) {
+        long n = x; // n is the number we want to find the square root of
+        while(n*n > x) // while n squared is greater than x
+           n= (n + x/n)>>1; // divide n by 2 and add x/n to n
+            return (int) n; // return n
+    }
 }
