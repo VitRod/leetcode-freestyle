@@ -8,8 +8,6 @@ package com.task70;
 //Each time you can either climb 1 or 2 steps. 
 //In how many distinct ways can you climb to the top?
 
-
-
 //Example 1:
 
 //Input: n = 2
@@ -26,19 +24,18 @@ package com.task70;
 //2. 1 step + 2 steps
 //3. 2 steps + 1 step
 
-
 //Constraints:
 
 //1 <= n <= 45
 
 public class Solution70 {
 	public int climbStairs(int n) {
-        int a = 1, b = 1; // a = 1, b = 2
-        while (--n > 0){ // n = 2
-            b = b+a; // b = 3
-            a = b -a; // a = 2
-        }
-        return b; // return 3
-        
-    }
+		int a = 1, b = 1; // a = 1, b = 2
+		while (--n > 0) { // n = 2
+			b = b + a; // b = 3
+			a = b - a; // a = 2
+		}
+		return b; // return 3
+
+	}
 }
