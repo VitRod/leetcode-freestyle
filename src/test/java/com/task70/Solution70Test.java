@@ -6,9 +6,17 @@ import org.junit.jupiter.api.Test;
 
 class Solution70Test {
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
+	 Solution70 s = new Solution70();
 
-}
+     
+	    @Test
+	    public void test1() {
+	        assertEquals(2, s.climbStairs(2));
+	    }
+
+	    @Test
+	    public void test2() {
+	        assertEquals(3, s.climbStairs(3));
+	    }
+
+	}
