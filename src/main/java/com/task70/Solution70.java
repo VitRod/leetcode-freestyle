@@ -32,5 +32,13 @@ package com.task70;
 //1 <= n <= 45
 
 public class Solution70 {
-
+	public int climbStairs(int n) {
+        int a = 1, b = 1; // a = 1, b = 2
+        while (--n > 0){ // n = 2
+            b = b+a; // b = 3
+            a = b -a; // a = 2
+        }
+        return b; // return 3
+        
+    }
 }
