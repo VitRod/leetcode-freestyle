@@ -27,5 +27,17 @@ package com.task83;
 //The list is guaranteed to be sorted in ascending order.
 
 public class Solution83 {
-
-}
+	public ListNode deleteDuplicates(ListNode head) {
+	      if(head == null || head.next == null) return head; // if there is only one node or no node, return the head
+	          ListNode curr = head; // create a new node to store the current node
+	        while(curr.next != null){ // while the next node is not null
+	            if(curr.next.val == curr.val){ // if the next node is the same as the current node
+	                curr.next = curr.next.next; // delete the next node
+	            }else{
+	                curr = curr.next; // if the next node is not the same as the current node, move to the next node
+	            }
+	        }
+	      
+	        return head; // return the head
+	    }
+	}
