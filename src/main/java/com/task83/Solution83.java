@@ -22,6 +22,7 @@ package com.task83;
 //The list is guaranteed to be sorted in ascending order.
 
 public class Solution83 {
+	
 	public ListNode deleteDuplicates(ListNode head) {
 		if (head == null || head.next == null)
 			return head; // if there is only one node or no node, return the head
