@@ -7,7 +7,6 @@ package com.task83;
 //such that each element appears only once. Return the linked list sorted as well.
 
 //Example 1:
-
 //Input: head = [1,1,2]
 //Output: [1,2]
 //Example 2:
