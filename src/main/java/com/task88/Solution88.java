@@ -47,4 +47,11 @@ package com.task88;
 
 public class Solution88 {
 
-}
+	 public void merge(int[] nums1, int m, int[] nums2, int n) {
+	        int p = m-- + n-- - 1; // p is the last index of nums1
+	 while(m >=0 && n >=0)  //while  m and n are not out of bound
+	        nums1[p--]= nums1[m]> nums2[n] ? nums1[m--] : nums2[n--]; // if nums1[m] > nums2[n], nums1[p] = nums1[m], m--, p--
+	            while(n>=0) //while n is not out of bound
+	                nums1[p--]= nums2[n--];   //nums1[p] = nums2[n], n--, p--
+	    }
+	}
