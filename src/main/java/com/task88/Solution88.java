@@ -34,7 +34,6 @@ package com.task88;
 //The 0 is only there to ensure the merge result can fit in nums1.
 
 //Constraints:
-
 //nums1.length == m + n
 //nums2.length == n
 //0 <= m, n <= 200
