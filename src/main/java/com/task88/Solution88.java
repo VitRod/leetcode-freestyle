@@ -13,8 +13,6 @@ package com.task88;
 //nums1 has a length of m + n, where the first m elements denote the elements that should be merged,
 //and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
-
-
 //Example 1:
 
 //Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
@@ -36,7 +34,6 @@ package com.task88;
 //Note that because m = 0, there are no elements in nums1. 
 //The 0 is only there to ensure the merge result can fit in nums1.
 
-
 //Constraints:
 
 //nums1.length == m + n
@@ -47,11 +44,12 @@ package com.task88;
 
 public class Solution88 {
 
-	 public void merge(int[] nums1, int m, int[] nums2, int n) {
-	        int p = m-- + n-- - 1; // p is the last index of nums1
-	 while(m >=0 && n >=0)  //while  m and n are not out of bound
-	        nums1[p--]= nums1[m]> nums2[n] ? nums1[m--] : nums2[n--]; // if nums1[m] > nums2[n], nums1[p] = nums1[m], m--, p--
-	            while(n>=0) //while n is not out of bound
-	                nums1[p--]= nums2[n--];   //nums1[p] = nums2[n], n--, p--
-	    }
+	public void merge(int[] nums1, int m, int[] nums2, int n) {
+		int p = m-- + n-- - 1; // p is the last index of nums1
+		while (m >= 0 && n >= 0) // while m and n are not out of bound
+			nums1[p--] = nums1[m] > nums2[n] ? nums1[m--] : nums2[n--]; // if nums1[m] > nums2[n], nums1[p] = nums1[m],
+																		// m--, p--
+		while (n >= 0) // while n is not out of bound
+			nums1[p--] = nums2[n--]; // nums1[p] = nums2[n], n--, p--
 	}
+}
