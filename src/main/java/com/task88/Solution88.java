@@ -20,7 +20,6 @@ package com.task88;
 //The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
 
 //Example 2:
-
 //Input: nums1 = [1], m = 1, nums2 = [], n = 0
 //Output: [1]
 //Explanation: The arrays we are merging are [1] and [].
