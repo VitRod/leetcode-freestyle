@@ -27,4 +27,22 @@ package com.task61;
 
 public class Solution61 {
 
-}
+	    public ListNode rotateRight(ListNode head, int k) {
+	        if(head == null) { // edge case
+	            return head;  // return null
+	        }
+	        ListNode copyHead = head; // copy head
+	        int len = 1; // length of list
+	        while(copyHead.next != null) { // iterate through list
+	            copyHead = copyHead.next; // move to next node
+	            len++; // increment length
+	        }
+	        copyHead.next = head; // link the  taail  to the head to make it  a circle
+	        for(int i = len - k % len;  i > 1; i--) { // iterate through the list
+	            head = head.next; // move to next node
+	        }
+	        copyHead = head.next; // copy head
+	        head.next = null; // break the circle
+	        return copyHead; // return the new head
+	    }
+	}
