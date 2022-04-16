@@ -8,6 +8,7 @@ package com.task61;
 //Example 1:
 //Input: head = [1,2,3,4,5], k = 2
 //Output: [4,5,1,2,3]
+
 //Example 2:
 
 //Input: head = [0,1,2], k = 4
