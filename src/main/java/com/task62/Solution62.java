@@ -36,5 +36,18 @@ package com.task62;
 
 
 public class Solution62 {
-
-}
+	
+	    public int uniquePaths(int m, int n) {
+	        int [] [] dp = new int [m][n]; // dp[i][j] = number of paths to reach (i,j)
+	        for(int i = 0; i < m; i++) { // initialize
+	            for(int j = 0; j < n; j++) { // initialize
+	                if(i == 0 || j == 0) { // if (i,j) is the top-left corner
+	                    dp[i][j] = 1; // then there is only one path to reach (i,j)
+	                } else {
+	                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1]; // otherwise, there are two paths to reach (i,j)
+	                }
+	            }
+	        }
+	        return dp[m - 1][n - 1]; // return the number of paths to reach (m - 1, n - 1)
+	    }
+	}
