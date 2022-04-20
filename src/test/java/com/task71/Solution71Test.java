@@ -8,18 +8,18 @@ class Solution71Test {
 
 	Solution71 s = new Solution71();
 
-    @Test
-    public void test1() {
-        assertEquals("/home", s.simplifyPath("/home/"));
-    }
+	@Test
+	public void test1() {
+		assertEquals("/home", s.simplifyPath("/home/"));
+	}
 
-    @Test
-    public void test2() {
-        assertEquals("/", s.simplifyPath("/../"));
-    }
+	@Test
+	public void test2() {
+		assertEquals("/", s.simplifyPath("/../"));
+	}
 
-    @Test
-    public void test3() {
-        assertEquals("/home/foo", s.simplifyPath("/home//foo/"));
-    }
+	@Test
+	public void test3() {
+		assertEquals("/home/foo", s.simplifyPath("/home//foo/"));
+	}
 }
