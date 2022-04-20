@@ -26,8 +26,6 @@ import java.util.Set;
 // from the root directory to the target file or directory (i.e., no period '.' or double period '..')
 // Return the simplified canonical path.
 
- 
-
 // Example 1:
 
 // Input: path = "/home/"
@@ -43,7 +41,6 @@ import java.util.Set;
 // Input: path = "/home//foo/"
 // Output: "/home/foo"
 // Explanation: In the canonical path, multiple consecutive slashes are replaced by a single one.
- 
 
 // Constraints:
 
@@ -51,22 +48,21 @@ import java.util.Set;
 // path consists of English letters, digits, period '.', slash '/' or '_'.
 // path is a valid absolute Unix path.
 
-
 public class Solution71 {
-	 public String simplifyPath(String path) {
-	        Deque<String> stack = new LinkedList<>(); // use a stack to store the path
-	        Set skipSet = new HashSet<>(Arrays.asList("..", ".", "")); // set of strings to skip
-	        for (String dir : path.split("/")) { // split the path into directories
-	            if (dir.equals("..") && !stack.isEmpty()) { // if the directory is ".." and the stack is not empty
-	                stack.pop(); // pop the last directory
-	            } else if (!skipSet.contains(dir)) { // if the directory is not ".." or "."
-	                stack.push(dir); // push the directory to the stack
-	            }
-	        }
-	        String result = ""; // initialize the result
-	        for(String dir : stack) { // iterate through the stack
-	            result = "/" + dir + result; // add the directory to the result
-	        }
-	        return result.isEmpty() ? "/" : result; // if the result is empty, return "/"
-	    }
+	public String simplifyPath(String path) {
+		Deque<String> stack = new LinkedList<>(); // use a stack to store the path
+		Set skipSet = new HashSet<>(Arrays.asList("..", ".", "")); // set of strings to skip
+		for (String dir : path.split("/")) { // split the path into directories
+			if (dir.equals("..") && !stack.isEmpty()) { // if the directory is ".." and the stack is not empty
+				stack.pop(); // pop the last directory
+			} else if (!skipSet.contains(dir)) { // if the directory is not ".." or "."
+				stack.push(dir); // push the directory to the stack
+			}
+		}
+		String result = ""; // initialize the result
+		for (String dir : stack) { // iterate through the stack
+			result = "/" + dir + result; // add the directory to the result
+		}
+		return result.isEmpty() ? "/" : result; // if the result is empty, return "/"
 	}
+}
