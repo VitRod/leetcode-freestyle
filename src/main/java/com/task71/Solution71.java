@@ -49,6 +49,7 @@ import java.util.Set;
 // path is a valid absolute Unix path.
 
 public class Solution71 {
+	
 	public String simplifyPath(String path) {
 		Deque<String> stack = new LinkedList<>(); // use a stack to store the path
 		Set skipSet = new HashSet<>(Arrays.asList("..", ".", "")); // set of strings to skip
