@@ -53,5 +53,20 @@ import java.util.Set;
 
 
 public class Solution71 {
-
-}
+	 public String simplifyPath(String path) {
+	        Deque<String> stack = new LinkedList<>(); // use a stack to store the path
+	        Set skipSet = new HashSet<>(Arrays.asList("..", ".", "")); // set of strings to skip
+	        for (String dir : path.split("/")) { // split the path into directories
+	            if (dir.equals("..") && !stack.isEmpty()) { // if the directory is ".." and the stack is not empty
+	                stack.pop(); // pop the last directory
+	            } else if (!skipSet.contains(dir)) { // if the directory is not ".." or "."
+	                stack.push(dir); // push the directory to the stack
+	            }
+	        }
+	        String result = ""; // initialize the result
+	        for(String dir : stack) { // iterate through the stack
+	            result = "/" + dir + result; // add the directory to the result
+	        }
+	        return result.isEmpty() ? "/" : result; // if the result is empty, return "/"
+	    }
+	}
