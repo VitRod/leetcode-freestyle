@@ -36,5 +36,32 @@ package com.task73;
 //Could you devise a constant space solution?
 
 public class Solution73 {
+	public void setZeroes(int[][] matrix) {
+        if(matrix == null || matrix.length == 0) { // if matrix is empty or null
+            return; // return
+        }
+        int height = matrix.length; // get height
+        int width = matrix[0].length; // get width
+        boolean [][] zero = new boolean[height][width]; // create a boolean matrix
+        for(int i = 0; i < height; i++) { // for each row
+            for(int j = 0; j < width; j++) { // for each column
+                if(matrix[i][j] == 0) { // if the element is 0
+                    zero[i][j] = true; // set the boolean matrix to true
+                }
+            }
+        }
 
+        for(int i = 0; i < height; i++) { // for each row
+            for(int j = 0; j < width; j++) { // for each column
+                if(zero[i][j]) { // if the boolean matrix is true
+                    for(int k = 0; k < height; k++) { // for each row
+                        matrix[k][j] = 0; // set the column to 0
+                    }
+                    for(int k = 0; k < width; k++) { // for each column
+                        matrix[i][k] = 0; // set the row to 0
+                    }
+                }
+            }
+        }
+    }
 }
