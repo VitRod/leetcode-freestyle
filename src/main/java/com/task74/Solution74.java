@@ -31,4 +31,33 @@ package com.task74;
 
 public class Solution74 {
 
-}
+        public boolean searchMatrix(int[][] matrix, int target) {
+            if(matrix == null 
+            || matrix.length == 0 
+            || matrix[0].length == 0
+            || matrix[0][0] > target
+            || matrix[matrix.length - 1][matrix[0].length - 1] < target) { // if target is out of range
+                return false;
+            }
+          int m = matrix.length; // number of rows
+          int n = matrix[0].length; // number of columns
+          int left = 0; // left index
+          int right = m * n - 1; // right index
+            while(left <= right) { // while left index is less than or equal to right index
+                int mid = left + (right - left) / 2; // mid index
+                int row = mid / n; // row index
+                int col = mid % n; // column index
+                if(matrix[row][col] == target) { // if target is found
+                    return true; // return true
+                } else if(matrix[row][col] > target) { // if target is less than matrix[row][col]
+                    right = mid - 1; // right index is mid index - 1
+                } else {
+                    left = mid + 1; // left index is mid index + 1
+                }
+            }
+            return false; // return false
+        }
+    }     
+
+
+        
