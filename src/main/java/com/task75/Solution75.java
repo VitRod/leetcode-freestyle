@@ -11,8 +11,6 @@ package com.task75;
 
 //You must solve this problem without using the library's sort function.
 
-
-
 //Example 1:
 
 //Input: nums = [2,0,2,1,1,0]
@@ -22,7 +20,6 @@ package com.task75;
 //Input: nums = [2,0,1]
 //Output: [0,1,2]
 
-
 //Constraints:
 
 //n == nums.length
@@ -31,24 +28,22 @@ package com.task75;
 
 public class Solution75 {
 	public void sortColors(int[] nums) {
-        int zero = 0; // index of 0
-        int two = nums.length - 1; // index of 2
-        for(int i = 0; i <= two;  ) { //for each element
-            if(nums[i] == 0 && i > zero) { // if element is 0 and is not at the index of 0
-                swap(nums, i, zero++); // swap element at index i with element at index 0
-            }else if (nums[i] == 2 && i < two) { // if element is 2 and is not at the index of 2
-                swap(nums, i, two--); // swap element at index i with element at index 2
-            } else{
-                i++; // increment i
-            }
-        }
-    }
+		int zero = 0; // index of 0
+		int two = nums.length - 1; // index of 2
+		for (int i = 0; i <= two;) { // for each element
+			if (nums[i] == 0 && i > zero) { // if element is 0 and is not at the index of 0
+				swap(nums, i, zero++); // swap element at index i with element at index 0
+			} else if (nums[i] == 2 && i < two) { // if element is 2 and is not at the index of 2
+				swap(nums, i, two--); // swap element at index i with element at index 2
+			} else {
+				i++; // increment i
+			}
+		}
+	}
 
-    void swap(int[] nums, int m, int n) {
-        int temp = nums[m]; // store element at index m
-        nums[m] = nums[n]; // swap element at index m with element at index n
-        nums[n] = temp; // swap element at index n with element at index m
-    }
+	void swap(int[] nums, int m, int n) {
+		int temp = nums[m]; // store element at index m
+		nums[m] = nums[n]; // swap element at index m with element at index n
+		nums[n] = temp; // swap element at index n with element at index m
+	}
 }
- 
-       
