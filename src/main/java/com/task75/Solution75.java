@@ -27,6 +27,7 @@ package com.task75;
 //nums[i] is either 0, 1, or 2.
 
 public class Solution75 {
+	
 	public void sortColors(int[] nums) {
 		int zero = 0; // index of 0
 		int two = nums.length - 1; // index of 2
