@@ -10,8 +10,6 @@ import java.util.List;
 
 // You may return the answer in any order.
 
- 
-
 // Example 1:
 
 // Input: n = 4, k = 2
@@ -28,35 +26,32 @@ import java.util.List;
 
 // Input: n = 1, k = 1
 // Output: [[1]]
- 
 
 // Constraints:
 
 // 1 <= n <= 20
 // 1 <= k <= n
 
-
 public class Solution77 {
 	public List<List<Integer>> combine(int n, int k) {
-        List result = new ArrayList<>(); // result
-        int [] nums = new int[n]; // nums
-        for(int i = 0; i < n; i++) { // initialize nums
-        nums[i] = i + 1; // 1, 2, 3, 4
-    }
-    backtracking(k, 0, nums, new ArrayList<>(), result); // backtracking
-    return result; // return result
-    }
+		List result = new ArrayList<>(); // result
+		int[] nums = new int[n]; // nums
+		for (int i = 0; i < n; i++) { // initialize nums
+			nums[i] = i + 1; // 1, 2, 3, 4
+		}
+		backtracking(k, 0, nums, new ArrayList<>(), result); // backtracking
+		return result; // return result
+	}
 
-    void   backtracking(int k, int start, int [] nums, List curr, List result) {
-        if(curr.size() == k) { 
-            result.add(new ArrayList<>(curr)); // add curr to result
-        } else if (curr.size() < k) { 
-            for(int i = start; i < nums.length; i++) { // start from start
-                curr.add(nums[i]); // add nums[i] to curr
-                backtracking(k, i + 1, nums, curr, result); // backtracking
-                curr.remove(curr.size() - 1); // remove nums[i] from curr
-            }
-        }
-    }
+	void backtracking(int k, int start, int[] nums, List curr, List result) {
+		if (curr.size() == k) {
+			result.add(new ArrayList<>(curr)); // add curr to result
+		} else if (curr.size() < k) {
+			for (int i = start; i < nums.length; i++) { // start from start
+				curr.add(nums[i]); // add nums[i] to curr
+				backtracking(k, i + 1, nums, curr, result); // backtracking
+				curr.remove(curr.size() - 1); // remove nums[i] from curr
+			}
+		}
+	}
 }
-   
