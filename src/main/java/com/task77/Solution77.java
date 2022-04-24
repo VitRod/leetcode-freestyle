@@ -37,5 +37,26 @@ import java.util.List;
 
 
 public class Solution77 {
+	public List<List<Integer>> combine(int n, int k) {
+        List result = new ArrayList<>(); // result
+        int [] nums = new int[n]; // nums
+        for(int i = 0; i < n; i++) { // initialize nums
+        nums[i] = i + 1; // 1, 2, 3, 4
+    }
+    backtracking(k, 0, nums, new ArrayList<>(), result); // backtracking
+    return result; // return result
+    }
 
+    void   backtracking(int k, int start, int [] nums, List curr, List result) {
+        if(curr.size() == k) { 
+            result.add(new ArrayList<>(curr)); // add curr to result
+        } else if (curr.size() < k) { 
+            for(int i = start; i < nums.length; i++) { // start from start
+                curr.add(nums[i]); // add nums[i] to curr
+                backtracking(k, i + 1, nums, curr, result); // backtracking
+                curr.remove(curr.size() - 1); // remove nums[i] from curr
+            }
+        }
+    }
 }
+   
