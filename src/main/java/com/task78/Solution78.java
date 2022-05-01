@@ -32,6 +32,7 @@ import java.util.List;
 
 
 public class Solution78 {
+	
 	public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>(); // result
         if(nums == null) { // if nums is null
