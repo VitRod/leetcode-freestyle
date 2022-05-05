@@ -6,12 +6,9 @@ import java.util.Arrays;
 // 56. Merge Intervals
 // Medium
 
-
 // Given an array of intervals where intervals[i] = [starti, endi], 
 // merge all overlapping intervals, and return an array of the non-overlapping 
 // intervals that cover all the intervals in the input.
-
- 
 
 // Example 1:
 
@@ -23,7 +20,6 @@ import java.util.Arrays;
 // Input: intervals = [[1,4],[4,5]]
 // Output: [[1,5]]
 // Explanation: Intervals [1,4] and [4,5] are considered overlapping.
- 
 
 // Constraints:
 
@@ -31,26 +27,26 @@ import java.util.Arrays;
 // intervals[i].length == 2
 // 0 <= starti <= endi <= 104
 
-
 public class Solution56 {
-	
+
 	public int[][] merge(int[][] intervals) {
-        Arrays.sort(intervals,(a,b)->Integer.compare(a[0],b[0])); // sort by start
-        ArrayList<int[]> list = new ArrayList<>(); // store the result
-        
-        for(int i = 0; i < intervals.length; i++){ // iterate through the intervals
-            int s = intervals[i][0]; // start
-            int e = intervals[i][1]; // end
-            for (int j = i+1; j < intervals.length; j++) { // iterate through the rest of the intervals
-                if (intervals[j][0] >= s && intervals[j][0] <= e) { // if the start of the next interval is within the current interval
-                    if (intervals[j][1] > e) { // if the end of the next interval is greater than the current interval
-                        e = intervals[j][1]; // update the end
-                    }
-                    i++; // increment the index
-                }
-            }
-            list.add(new int[]{s,e}); // add the interval to the result
-        }
-        return list.toArray(new int[list.size()][2]); // return the result
-    }
+		Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0])); // sort by start
+		ArrayList<int[]> list = new ArrayList<>(); // store the result
+
+		for (int i = 0; i < intervals.length; i++) { // iterate through the intervals
+			int s = intervals[i][0]; // start
+			int e = intervals[i][1]; // end
+			for (int j = i + 1; j < intervals.length; j++) { // iterate through the rest of the intervals
+				if (intervals[j][0] >= s && intervals[j][0] <= e) { // if the start of the next interval is within the
+																	// current interval
+					if (intervals[j][1] > e) { // if the end of the next interval is greater than the current interval
+						e = intervals[j][1]; // update the end
+					}
+					i++; // increment the index
+				}
+			}
+			list.add(new int[] { s, e }); // add the interval to the result
+		}
+		return list.toArray(new int[list.size()][2]); // return the result
+	}
 }
