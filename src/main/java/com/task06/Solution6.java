@@ -11,7 +11,7 @@ package com.task06;
 //A P L S I I G
 //Y   I   R
 //And then read line by line: "PAHNAPLSIIGYIR"
-
+     
 //Write the code that will take a string and make this conversion given a number of rows:
     
 //string convert(string s, int numRows);
