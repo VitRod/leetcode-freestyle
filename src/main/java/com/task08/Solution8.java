@@ -17,7 +17,7 @@ package com.task08;
                
 //Only the space character ' ' is considered a whitespace character.
 //Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.
-
+    
 //Example 1:
      
 //Input: s = "42"
