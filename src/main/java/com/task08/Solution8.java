@@ -19,7 +19,7 @@ package com.task08;
 //Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.
 
 //Example 1:
-
+     
 //Input: s = "42"
 //Output: 42
 //Explanation: The underlined characters are what is read in, the caret is the current reader position.
