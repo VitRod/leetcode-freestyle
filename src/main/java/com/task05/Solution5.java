@@ -35,7 +35,7 @@ class Solution5 {
      }
      return s.substring(st, end + 1); // return substring of s
  }
- 
+    
  
  public void helper(char[] chars, int l, int r) {
      // while l and r are in bounds and chars[l] and chars[r] are equal
