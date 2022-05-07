@@ -10,7 +10,7 @@ package com.task10;
 //The matching should cover the entire input string (not partial).
    
 //Example 1:
-     
+         
 //Input: s = "aa", p = "a"
 //Output: false
 //Explanation: "a" does not match the entire string "aa".
