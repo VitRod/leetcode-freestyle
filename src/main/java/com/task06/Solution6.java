@@ -30,7 +30,7 @@ package com.task06;
 //Y A   H R
 //P     I
 //Example 3:
-
+    
 //Input: s = "A", numRows = 1
 //Output: "A"
 
