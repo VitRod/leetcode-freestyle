@@ -6,7 +6,7 @@ package com.task08;
 //Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
 
 //The algorithm for myAtoi(string s) is as follows:
-        
+            
 //Read in and ignore any leading whitespace.
 //Check if the next character (if not already at the end of the string) is '-' or '+'. Read this character in if it is either. This determines if the final result is negative or positive respectively. Assume the result is positive if neither is present.
 //Read in next the characters until the next non-digit character or the end of the input is reached. The rest of the string is ignored.
