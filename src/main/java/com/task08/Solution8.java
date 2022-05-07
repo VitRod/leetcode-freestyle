@@ -14,7 +14,7 @@ package com.task08;
 //If the integer is out of the 32-bit signed integer range [-231, 231 - 1], then clamp the integer so that it remains in the range. Specifically, integers less than -231 should be clamped to -231, and integers greater than 231 - 1 should be clamped to 231 - 1.
 //Return the integer as the final result.
 //Note:
-        
+            
 //Only the space character ' ' is considered a whitespace character.
 //Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.
 
