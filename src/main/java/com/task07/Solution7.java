@@ -1,5 +1,5 @@
 package com.task07;
-    
+        
 //7. Reverse Integer
 //Medium
          
