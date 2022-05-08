@@ -1,5 +1,5 @@
 package com.task14;
-
+      
 //14. Longest Common Prefix
 //Easy
 
