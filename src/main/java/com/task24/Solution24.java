@@ -11,7 +11,7 @@ package com.task24;
 //Input: head = [1,2,3,4]    
 //Output: [2,1,4,3]  
 //Example 2:
-
+  
 //Input: head = []
 //Output: []
 //Example 3:
