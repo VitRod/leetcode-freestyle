@@ -9,7 +9,7 @@ package com.task21;
 //The list should be made by splicing together the nodes of the first two lists.
 
 //Return the head of the merged linked list.
-
+   
 //Example 1:
 
 //Input: list1 = [1,2,4], list2 = [1,3,4]
