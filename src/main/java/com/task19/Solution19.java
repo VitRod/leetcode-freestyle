@@ -7,7 +7,7 @@ package com.task19;
 
 //Example 1:    
 
-//Input: head = [1,2,3,4,5], n = 2   
+//Input: head = [1,2,3,4,5], n = 2     
 //Output: [1,2,3,5]
 //Example 2:
 
