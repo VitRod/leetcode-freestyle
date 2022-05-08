@@ -20,7 +20,7 @@ import java.util.List;
 
 //Constraints:
 
-//1 <= n <= 8
+//1 <= n <= 8   
 
 public class Solution22 {
 
