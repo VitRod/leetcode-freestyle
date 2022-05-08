@@ -11,7 +11,7 @@ import java.util.List;
     
 //Example 1:
     
-//Input: n = 3
+//Input: n = 3    
 //Output: ["((()))","(()())","(())()","()(())","()()()"]
 //Example 2:
 
