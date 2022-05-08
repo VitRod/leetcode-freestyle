@@ -11,7 +11,7 @@ package com.task19;
 //Output: [1,2,3,5]
 //Example 2:
 
-//Input: head = [1], n = 1
+//Input: head = [1], n = 1   
 //Output: []
 //Example 3:
 
