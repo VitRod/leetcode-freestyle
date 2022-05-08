@@ -7,7 +7,7 @@ package com.task23;
 
 //Merge all the linked-lists into one sorted linked-list and return it.   
    
-//Example 1:   
+//Example 1:      
   
 //Input: lists = [[1,4,5],[1,3,4],[2,6]]   
 //Output: [1,1,2,3,4,4,5,6]
