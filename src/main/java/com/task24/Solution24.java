@@ -9,7 +9,7 @@ package com.task24;
 //Example 1:    
 
 //Input: head = [1,2,3,4]    
-//Output: [2,1,4,3]
+//Output: [2,1,4,3]  
 //Example 2:
 
 //Input: head = []
