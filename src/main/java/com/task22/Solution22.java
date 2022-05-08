@@ -2,7 +2,7 @@ package com.task22;
 
 import java.util.ArrayList;
 import java.util.List;
-    
+       
 //22. Generate Parentheses
 //Medium
        
