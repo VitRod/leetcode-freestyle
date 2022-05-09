@@ -2,7 +2,7 @@ package com.task30;
 
 import java.util.ArrayList;    
 import java.util.HashMap;
-import java.util.List;
+import java.util.List;   
 import java.util.Map;
 
 // 30. Substring with Concatenation of All Words
