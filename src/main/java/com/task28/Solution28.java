@@ -24,7 +24,7 @@ package com.task28;
 //Output: -1
 //Example 3:
 
-//Input: haystack = "", needle = ""
+//Input: haystack = "", needle = ""    
 //Output: 0
 
 //Constraints:
