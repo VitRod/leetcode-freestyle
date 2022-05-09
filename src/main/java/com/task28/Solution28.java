@@ -16,7 +16,7 @@ package com.task28;
     
 //Example 1:        
 
-//Input: haystack = "hello", needle = "ll"         
+//Input: haystack = "hello", needle = "ll"            
 //Output: 2
 //Example 2:
 
