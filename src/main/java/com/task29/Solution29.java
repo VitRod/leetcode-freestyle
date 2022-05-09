@@ -1,6 +1,6 @@
 package com.task29;
 
-//29. Divide Two Integers
+//29. Divide Two Integers    
 //Medium       
 
 //Given two integers dividend and divisor, divide two integers without using multiplication,
