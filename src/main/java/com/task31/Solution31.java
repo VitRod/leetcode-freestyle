@@ -1,5 +1,5 @@
 package com.task31;
-
+    
 //31. Next Permutation
 //Medium
 
