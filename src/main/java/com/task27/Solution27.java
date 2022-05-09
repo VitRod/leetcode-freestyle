@@ -4,7 +4,7 @@ package com.task27;
 //Easy       
            
 //Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
-//The relative order of the elements may be changed.    
+//The relative order of the elements may be changed.       
     
 //Since it is impossible to change the length of the array in some languages, 
 //you must instead have the result be placed in the first part of the array nums. More formally, 
