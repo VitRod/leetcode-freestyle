@@ -1,5 +1,5 @@
 package com.task27;
-
+   
 //27. Remove Element   
 //Easy
            
