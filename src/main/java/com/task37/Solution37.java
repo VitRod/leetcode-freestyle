@@ -1,5 +1,5 @@
 package com.task37;
-   
+      
 //37. Sudoku Solver
 //Hard
       
