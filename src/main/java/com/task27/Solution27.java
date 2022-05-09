@@ -2,7 +2,7 @@ package com.task27;
 
 //27. Remove Element
 //Easy
-    
+        
 //Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
 //The relative order of the elements may be changed.
 
