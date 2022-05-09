@@ -1,7 +1,7 @@
 package com.task37;
       
 //37. Sudoku Solver
-//Hard
+//Hard   
       
 //Write a program to solve a Sudoku puzzle by filling the empty cells.
       
