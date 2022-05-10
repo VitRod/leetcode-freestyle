@@ -7,7 +7,7 @@ package com.task32;
 //find the length of the longest valid (well-formed) parentheses substring.
 
          
-     
+        
 //Example 1:
      
 //Input: s = "(()"
