@@ -9,7 +9,7 @@ package com.task32;
          
      
 //Example 1:
-
+     
 //Input: s = "(()"
 //Output: 2
 //Explanation: The longest valid parentheses substring is "()".
