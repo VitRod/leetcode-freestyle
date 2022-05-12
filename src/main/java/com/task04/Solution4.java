@@ -54,5 +54,5 @@ class Solution4 {
 		} else {
 			return merged[(m + n) / 2]; // return the middle element
 		}
-	}
+	}  
 }
