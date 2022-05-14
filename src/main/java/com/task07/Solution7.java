@@ -1,7 +1,7 @@
 package com.task07;
         
 //7. Reverse Integer    
-//Medium          
+//Medium             
            
 //Given a signed 32-bit integer x, return x with its digits reversed. 
 //If reversing x causes the value to go outside the signed 
