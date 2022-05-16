@@ -9,7 +9,7 @@ package com.task10;
 //'*' Matches zero or more of the preceding element.
 //The matching should cover the entire input string (not partial).
       
-//Example 1:
+//Example 1:   
          
 //Input: s = "aa", p = "a"
 //Output: false
