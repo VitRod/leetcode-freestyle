@@ -24,7 +24,7 @@ package com.task20;
 //Input: s = "(]"
 //Output: false
 
-//Constraints:
+//Constraints:  
 
 //1 <= s.length <= 104
 //s consists of parentheses only '()[]{}'.
