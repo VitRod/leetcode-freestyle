@@ -1,7 +1,7 @@
 package com.task23;
 
 //23. Merge k Sorted Lists
-//Hard             
+//Hard                
           
 //You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.
 
