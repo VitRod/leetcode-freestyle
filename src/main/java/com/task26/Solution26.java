@@ -1,6 +1,6 @@
 package com.task26;
 
-//26. Remove Duplicates from Sorted Array       
+//26. Remove Duplicates from Sorted Array          
 //Easy                  
     
 //Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such 
