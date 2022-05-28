@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;   
 import java.util.Map;    
     
-// 30. Substring with Concatenation of All Words          
+// 30. Substring with Concatenation of All Words              
 // Hard                 
                  
 // You are given a string s and an array of strings words of the same length. 
