@@ -1,7 +1,7 @@
 package com.task32;
 
 //32. Longest Valid Parentheses
-//Hard     
+//Hard         
         
 //Given a string containing just the characters '(' and ')', 
 //find the length of the longest valid (well-formed) parentheses substring.
