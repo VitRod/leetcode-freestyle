@@ -1,7 +1,7 @@
 package com.task33;
 
 //33. Search in Rotated Sorted Array                
-//Medium                                    
+//Medium                                         
     
 //There is an integer array nums sorted in ascending order (with distinct values).          
 
