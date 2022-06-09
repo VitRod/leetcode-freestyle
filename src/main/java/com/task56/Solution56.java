@@ -3,7 +3,7 @@ package com.task56;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-// 56. Merge Intervals
+// 56. Merge Intervals    
 // Medium               
     
 // Given an array of intervals where intervals[i] = [starti, endi], 
