@@ -1,7 +1,7 @@
 package com.task09;
 
 //9. Palindrome Number
-//Easy     
+//Easy         
    
 //Given an integer x, return true if x is palindrome integer.
 
