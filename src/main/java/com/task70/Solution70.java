@@ -1,6 +1,6 @@
 package com.task70;
 
-//70. Climbing Stairs
+//70. Climbing Stairs    
 //Easy                 
 
 //You are climbing a staircase. It takes n steps to reach the top.
