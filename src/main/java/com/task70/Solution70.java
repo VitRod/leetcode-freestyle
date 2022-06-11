@@ -2,7 +2,7 @@ package com.task70;
 
 //70. Climbing Stairs    
 //Easy                         
-
+     
 //You are climbing a staircase. It takes n steps to reach the top.
 
 //Each time you can either climb 1 or 2 steps. 
