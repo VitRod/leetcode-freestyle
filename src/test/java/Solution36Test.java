@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import com.task36.Solution36;
 
 class Solution36Test {
-
+    
 	 Solution36 solution = new Solution36();   
 	    
 	    @Test
