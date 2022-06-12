@@ -2,7 +2,7 @@ package com.task03;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;   
 
 import com.task03.Solution3;
 
