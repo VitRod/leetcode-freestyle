@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import com.task03.Solution3;
 
-public class Solution3Test {        
+public class Solution3Test {           
 	
      Solution3 s = new Solution3();
      
