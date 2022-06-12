@@ -11,7 +11,7 @@ public class Solution3Test {
      Solution3 s = new Solution3();      
      
     @Test
-    public void test1() {      
+    public void test1() {         
         assertEquals(3, s.lengthOfLongestSubstring("abcabcbb"));
     }    
 
