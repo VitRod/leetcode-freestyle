@@ -8,7 +8,7 @@ import com.task06.Solution6;
 
 
 public class Solution6Test {
-    
+        
 	Solution6 s = new Solution6();
 	
     @Test
