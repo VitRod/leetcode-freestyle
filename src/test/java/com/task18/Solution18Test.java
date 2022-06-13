@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class Solution18Test {
 
 	Solution18 s = new Solution18();
-
+   
 	@Test
 	public void testFourSum() {
 		int[] nums = { 1, 0, -1, 0, -2, 2 };
