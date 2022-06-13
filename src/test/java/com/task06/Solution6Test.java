@@ -11,7 +11,7 @@ public class Solution6Test {
         
 	Solution6 s = new Solution6();
 	
-    @Test
+    @Test    
     public void test1() {
         
         assertEquals("PAHNAPLSIIGYIR", s.convert("PAYPALISHIRING", 3));
