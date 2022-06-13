@@ -1,0 +1,55 @@
+package com.task49;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+// 49. Group Anagrams
+// Medium
+
+// Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+
+// An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+//  typically using all the original letters exactly once.
+
+// Example 1:
+
+// Input: strs = ["eat","tea","tan","ate","nat","bat"]
+// Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+// Example 2:
+
+// Input: strs = [""]
+// Output: [[""]]
+// Example 3:
+
+// Input: strs = ["a"]
+// Output: [["a"]]
+
+// Constraints:
+
+// 1 <= strs.length <= 104
+// 0 <= strs[i].length <= 100
+// strs[i] consists of lowercase English letters.
+
+public class Solution49 {
+
+	public List<List<String>> groupAnagrams(String[] strs) {
+		List<List<String>> result = new ArrayList<>(); // result
+		Map<String, List<String>> map = new HashMap<>(); // map
+		for (String str : strs) { // for each string
+			char[] chars = str.toCharArray(); // convert to char array
+			Arrays.sort(chars); // sort
+			String key = String.valueOf(chars); // convert back to string
+			if (!map.containsKey(key)) { // if key not in map
+				map.put(key, new ArrayList<>()); // add key to map
+			}
+			map.get(key).add(str); // add string to map
+		}
+		for (List<String> list : map.values()) { // for each list
+			result.add(list); // add list to result
+		}
+		return result; // return result
+	}
+}
