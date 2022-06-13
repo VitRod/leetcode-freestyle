@@ -1,6 +1,6 @@
 package com.task01;
                   
-//01. Two Sum        
+//1. Two Sum        
 //Easy     
 //         
 //Given an array of integers nums and an integer target, 
