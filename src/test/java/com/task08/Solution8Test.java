@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution8Test {
 	                   
   Solution8 s = new Solution8();
-      
+           
 	@Test
     public void test1() {     
         assertEquals(42, s.myAtoi("42"));
