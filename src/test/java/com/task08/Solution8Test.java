@@ -11,7 +11,7 @@ class Solution8Test {
 	@Test
     public void test1() {     
         assertEquals(42, s.myAtoi("42"));
-    }
+    }     
 
     @Test
     public void test2() {        
