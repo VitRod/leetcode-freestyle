@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;   
 
-class Solution10Test {    
+class Solution10Test {       
      
 	@Test 
     public void testIsMatch() {
