@@ -3,7 +3,7 @@ package com.task12;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-
+    
 class Solution12Test {
                 
 	@Test
