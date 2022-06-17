@@ -8,7 +8,7 @@ class Solution16Test {
 
 	Solution16 solution = new Solution16();
 
-	@Test
+	@Test    
 	public void testThreeSumClosest() {
 		int[] nums = { -1, 2, 1, -4 };
 		int target = 1;
