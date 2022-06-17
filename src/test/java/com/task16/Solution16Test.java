@@ -26,3 +26,4 @@ class Solution16Test {
 		assertEquals(expected, actual);
 	}
 }
+   
