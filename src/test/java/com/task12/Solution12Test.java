@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 class Solution12Test {
-       
+          
 	@Test
 	public void testIntToRoman() {
 		Solution12 s = new Solution12();
