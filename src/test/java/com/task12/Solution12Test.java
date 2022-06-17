@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
     
 class Solution12Test {
                     
-	@Test
+	@Test   
 	public void testIntToRoman() {
 		Solution12 s = new Solution12();
 		assertEquals("III", s.intToRoman(3));
