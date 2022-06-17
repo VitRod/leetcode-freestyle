@@ -1,7 +1,7 @@
 package com.task16;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+   
 import org.junit.jupiter.api.Test;
        
 class Solution16Test {
