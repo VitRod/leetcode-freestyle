@@ -3,7 +3,7 @@ package com.task31;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.Arrays;
-
+    
 import org.junit.jupiter.api.Test;
 
 class Solution31Test {
