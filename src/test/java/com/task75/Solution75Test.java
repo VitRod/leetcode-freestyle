@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution75Test {
 
 	Solution75 s = new Solution75();
-
+    
 	@Test
 	public void test1() {
 		int[] nums = { 2, 0, 2, 1, 1, 0 };
