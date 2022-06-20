@@ -3,7 +3,7 @@ package com.task75;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-
+    
 class Solution75Test {
 
 	Solution75 s = new Solution75();
