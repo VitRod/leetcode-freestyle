@@ -15,7 +15,7 @@ class Solution34Test {
 		int[] result = solution.searchRange(nums, target);
 		assertEquals(3, result[0]);
 		assertEquals(4, result[1]);
-	}
+	}    
 
 	@Test
 	public void test2() {
