@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.Arrays;            
          
 import org.junit.jupiter.api.Test;
-        
+             
 class Solution48Test {
 
 	Solution48 solution = new Solution48();
