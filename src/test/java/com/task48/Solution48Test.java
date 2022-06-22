@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class Solution48Test {
 
 	Solution48 solution = new Solution48();
-
+   
 	@Test
 	public void test1() {
 		int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
