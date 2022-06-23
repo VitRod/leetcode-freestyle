@@ -8,7 +8,7 @@ class Solution50Test {
     
 	Solution50 solution = new Solution50();
 
-	@Test
+	@Test   
 	public void test1() {
 		assertEquals(1024.00000, solution.myPow(2.00000, 10), 0.00001);
 	}
