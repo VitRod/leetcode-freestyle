@@ -20,7 +20,7 @@ class Solution57Test {
 			assertEquals(expected[i][1], result[i][1]);
 		}
 	}
-
+   
 	@Test
 	public void test2() {
 		int[][] intervals = { { 1, 2 }, { 3, 5 }, { 6, 7 }, { 8, 10 }, { 12, 16 } };
