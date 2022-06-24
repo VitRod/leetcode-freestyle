@@ -8,7 +8,7 @@ class Solution57Test {
 
 	Solution57 s = new Solution57();
 
-	@Test
+	@Test   
 	public void test1() {
 		int[][] intervals = { { 1, 3 }, { 6, 9 } };
 		int[] newInterval = { 2, 5 };
