@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution57Test {    
 
 	Solution57 s = new Solution57();
-
+    
 	@Test   
 	public void test1() {
 		int[][] intervals = { { 1, 3 }, { 6, 9 } };
