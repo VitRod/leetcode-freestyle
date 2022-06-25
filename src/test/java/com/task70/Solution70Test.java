@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution70Test {
 
 	Solution70 s = new Solution70();
-
+    
 	@Test
 	public void test1() {
 		assertEquals(2, s.climbStairs(2));
