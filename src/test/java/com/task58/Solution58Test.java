@@ -11,7 +11,7 @@ class Solution58Test {
 	@Test       
 	public void test1() {
 		assertEquals(5, s.lengthOfLastWord("Hello World"));
-	}
+	}   
 
 	@Test
 	public void test2() {
