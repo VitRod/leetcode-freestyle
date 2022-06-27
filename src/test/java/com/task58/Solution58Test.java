@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution58Test {   
 
 	Solution58 s = new Solution58();
-
+    
 	@Test
 	public void test1() {
 		assertEquals(5, s.lengthOfLastWord("Hello World"));
