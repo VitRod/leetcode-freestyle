@@ -16,7 +16,7 @@ class Solution33Test {
 		int actual = solution.search(nums, target);
 		assertEquals(expected, actual);
 	}
-    
+       
 	@Test
 	public void test2() {
 		int[] nums = { 4, 5, 6, 7, 0, 1, 2 };
