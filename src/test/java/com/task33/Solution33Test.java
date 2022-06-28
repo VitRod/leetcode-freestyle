@@ -26,7 +26,7 @@ class Solution33Test {
 		assertEquals(expected, actual);
 	}
 
-	@Test
+	@Test   
 	public void test3() {
 		int[] nums = { 1 };
 		int target = 0;
