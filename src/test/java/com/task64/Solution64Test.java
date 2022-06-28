@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution64Test {
          
 	Solution64 s = new Solution64();
-    
+        
 	@Test    
 	public void test1() {
 		int[][] grid = { { 1, 3, 1 }, { 1, 5, 1 }, { 4, 2, 1 } };
