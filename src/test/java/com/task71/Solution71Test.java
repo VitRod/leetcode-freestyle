@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution71Test {
      
 	Solution71 s = new Solution71();
-         
+              
 	@Test
 	public void test1() {
 		assertEquals("/home", s.simplifyPath("/home/"));
