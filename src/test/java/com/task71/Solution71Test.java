@@ -12,7 +12,7 @@ class Solution71Test {
 	public void test1() {
 		assertEquals("/home", s.simplifyPath("/home/"));
 	}
-
+     
 	@Test
 	public void test2() {
 		assertEquals("/", s.simplifyPath("/../"));
