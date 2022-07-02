@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution38Test {
 	
 	  Solution38 solution = new Solution38();
-	   
+	       
 	    @Test
 	    public void test1() {
 	        assertEquals("1", solution.countAndSay(1));
