@@ -3,7 +3,7 @@ package com.task38;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-    
+        
 class Solution38Test {
 	
 	  Solution38 solution = new Solution38();
