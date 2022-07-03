@@ -11,7 +11,7 @@ class Solution69Test {
 	@Test
 	public void test1() {
 		assertEquals(2, s.mySqrt(4));
-	}
+	}    
 
 	@Test
 	public void test2() {
