@@ -8,7 +8,7 @@ class Solution69Test {
              
 	Solution69 s = new Solution69();
             
-	@Test
+	@Test    
 	public void test1() {
 		assertEquals(2, s.mySqrt(4));
 	}    
