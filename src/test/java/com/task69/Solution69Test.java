@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class Solution69Test {
-         
+             
 	Solution69 s = new Solution69();
         
 	@Test
