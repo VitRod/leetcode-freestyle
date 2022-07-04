@@ -7,7 +7,7 @@ import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 class Solution56Test {
-
+     
 	Solution56 s = new Solution56();
 
 	@Test
