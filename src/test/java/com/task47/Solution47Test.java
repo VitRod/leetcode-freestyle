@@ -29,3 +29,4 @@ class Solution47Test {
 		assertEquals(expected, actual);
 	}
 }
+   
