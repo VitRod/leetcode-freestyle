@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
         
 import org.junit.jupiter.api.Test;
-     
+          
 class Solution47Test {
 
 	Solution47 solution = new Solution47();
