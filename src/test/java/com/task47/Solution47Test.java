@@ -19,7 +19,7 @@ class Solution47Test {
 		List<List<Integer>> actual = solution.permuteUnique(nums);
 		assertEquals(expected, actual);
 	}
-
+    
 	@Test
 	public void test2() {
 		int[] nums = { 1, 2, 3 };
