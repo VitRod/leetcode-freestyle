@@ -11,7 +11,7 @@ class Solution47Test {
 
 	Solution47 solution = new Solution47();
 
-	@Test
+	@Test     
 	public void test1() {
 		int[] nums = { 1, 1, 2 };
 		List<List<Integer>> expected = Arrays.asList(Arrays.asList(1, 1, 2), Arrays.asList(1, 2, 1),
