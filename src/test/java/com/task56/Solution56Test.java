@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 class Solution56Test {
      
 	Solution56 s = new Solution56();
-
+     
 	@Test
 	public void test1() {
 		int[][] intervals = new int[][] { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
