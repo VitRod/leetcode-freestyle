@@ -7,7 +7,7 @@ import java.util.List;
         
 import org.junit.jupiter.api.Test;
                          
-class Solution47Test {
+class Solution47Test {   
 
 	Solution47 solution = new Solution47();
 
