@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class Solution40Test {
     
 	Solution40 solution = new Solution40();
-
+    
 	@Test
 	public void test1() {
 		int[] candidates = { 10, 1, 2, 7, 6, 1, 5 };
