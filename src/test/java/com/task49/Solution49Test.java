@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class Solution49Test {
      
 	Solution49 solution = new Solution49();
-
+    
 	@Test
 	public void test1() {
 		String[] strs = new String[] { "" };
