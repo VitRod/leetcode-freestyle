@@ -8,7 +8,7 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 
 class Solution49Test {
-
+     
 	Solution49 solution = new Solution49();
 
 	@Test
