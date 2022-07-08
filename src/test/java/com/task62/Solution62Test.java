@@ -8,7 +8,7 @@ class Solution62Test {
                
 	Solution62 s = new Solution62();
                       
-	@Test
+	@Test    
 	public void test1() {
 		assertEquals(28, s.uniquePaths(3, 7));
 	}
