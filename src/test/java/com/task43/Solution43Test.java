@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 class Solution43Test {
-    
+       
 	Solution43 solution = new Solution43();
        
 	@Test
