@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution43Test {
     
 	Solution43 solution = new Solution43();
-   
+       
 	@Test
 	public void test1() {
 		assertEquals("6", solution.multiply("2", "3"));
