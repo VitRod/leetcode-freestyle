@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class Solution79Test {
 
 	Solution79 s = new Solution79();
-    
+         
 	@Test
 	public void test1() {
 		char[][] board = { { 'A', 'B', 'C', 'E' }, { 'S', 'F', 'C', 'S' }, { 'A', 'D', 'E', 'E' } };
