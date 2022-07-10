@@ -14,7 +14,7 @@ class Solution45Test {
 		int expected = 2;
 		int actual = solution.jump(nums);
 		assertEquals(expected, actual);
-	}
+	}    
      
 	@Test
 	public void test2() {
