@@ -15,7 +15,7 @@ class Solution45Test {
 		int actual = solution.jump(nums);
 		assertEquals(expected, actual);
 	}
-
+     
 	@Test
 	public void test2() {
 		int[] nums = { 2, 3, 0, 1, 4 };
