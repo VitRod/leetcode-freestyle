@@ -9,7 +9,7 @@ class Solution7Test {
 	@Test
     public void test1() {
         Solution7 s = new Solution7();
-        
+            
         assertEquals(0, s.reverse(0));
         assertEquals(1, s.reverse(1));
         assertEquals(-1, s.reverse(-1));
