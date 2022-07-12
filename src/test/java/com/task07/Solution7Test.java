@@ -19,4 +19,4 @@ class Solution7Test {
         assertEquals(0, s.reverse(Integer.MAX_VALUE));
         assertEquals(0, s.reverse(Integer.MIN_VALUE));
     }
-}
+}    
