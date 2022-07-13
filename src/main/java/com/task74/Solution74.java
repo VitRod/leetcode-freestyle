@@ -24,7 +24,7 @@ package com.task74;
 //n == matrix[i].length
 //1 <= m, n <= 100
 //-104 <= matrix[i][j], target <= 104
-
+     
 public class Solution74 {
 
 	public boolean searchMatrix(int[][] matrix, int target) {
