@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>leetcode-freestyle</name>
   
-  <properties>
+  <properties>   
 		<junit.jupiter.version>5.7.2</junit.jupiter.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
