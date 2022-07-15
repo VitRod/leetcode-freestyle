@@ -47,7 +47,7 @@ class Solution3 {
 			hash[c] = i + 1; // update hash with the current character
 			if (l > max)
 				max = l; // update max
-		}
+		}   
 		return max;
 	}
 }
