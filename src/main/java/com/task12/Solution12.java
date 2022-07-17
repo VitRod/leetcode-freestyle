@@ -58,7 +58,7 @@ public class Solution12 {
 			while (num >= values[i]) {
 				num -= values[i];
 				sb.append(symbols[i]); // append the roman numeral
-			}
+			}    
 		}
 		return sb.toString();
 	}
