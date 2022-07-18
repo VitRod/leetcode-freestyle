@@ -52,7 +52,7 @@ package com.task26;
 //nums is sorted in non-decreasing order.
 
 public class Solution26 {
-
+   
 	public int removeDuplicates(int[] nums) {
         int len = nums.length; // length of the array
 // if the array is empty or has only one element, return the length
