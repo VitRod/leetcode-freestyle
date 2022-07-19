@@ -62,7 +62,7 @@ public class Solution15 {
 					right--; // decrement right pointer
 				}
 			}
-		}
+		}   
 		return result; // return result
 	}
 }
