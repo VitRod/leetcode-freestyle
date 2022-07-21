@@ -47,5 +47,5 @@ public class Solution21 {
 		}
 		temp.next = l1 != null ? l1 : l2; // if l1 is empty, add l2 to the list
 		return head.next;
-	}
+	}    
 }
