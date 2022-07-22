@@ -1,7 +1,7 @@
 package com.task38;
 
 //38. Count and Say
-//Medium
+//Medium    
                   
 //The count-and-say sequence is a sequence of digit strings defined by the recursive formula:
               
