@@ -7,7 +7,7 @@ package com.task42;
 //compute how much water it can trap after raining.
               
                                         
-
+      
 //Example 1:
 
     
