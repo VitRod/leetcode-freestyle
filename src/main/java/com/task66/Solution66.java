@@ -37,7 +37,7 @@ package com.task66;
 //0 <= digits[i] <= 9
 //digits does not contain any leading 0's.
 
-public class Solution66 {
+public class Solution66 {     
 
 	public int[] plusOne(int[] digits) {
 		int p = digits.length - 1; // p is the index of the last digit
