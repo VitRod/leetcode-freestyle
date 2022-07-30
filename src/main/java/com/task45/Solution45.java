@@ -2,7 +2,7 @@ package com.task45;
 
 //45. Jump Game II
 //Medium    
-     
+        
 //Given an array of non-negative integers nums, you are initially 
 //positioned at the first index of the array.
 
