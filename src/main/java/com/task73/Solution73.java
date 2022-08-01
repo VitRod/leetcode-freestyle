@@ -7,7 +7,7 @@ package com.task73;
                           
 //You must do it in place.
         
-//Example 1:
+//Example 1:    
    
 //Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
 //Output: [[1,0,1],[0,0,0],[1,0,1]]
