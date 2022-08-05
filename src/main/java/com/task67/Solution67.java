@@ -1,7 +1,7 @@
 package com.task67;
 
 //67. Add Binary
-//Easy
+//Easy    
     
 //Given two binary strings a and b, return their sum as a binary string.
 
