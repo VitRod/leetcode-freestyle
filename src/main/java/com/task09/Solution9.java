@@ -9,7 +9,7 @@ package com.task09;
 
 //For example, 121 is a palindrome while 123 is not.
 
-     
+        
 //Example 1:
 
 //Input: x = 121
