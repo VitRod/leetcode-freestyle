@@ -1,0 +1,22 @@
+This code is a Java implementation of the "Two Sum" problem,
+which is a classic algorithmic problem in computer science.
+The problem statement is as follows:
+
+Given an array of integers nums and an integer target,
+return indices of the two numbers such that they add up to target.
+ You may assume that each input would have exactly one solution,
+ and you may not use the same element twice.
+
+The code defines a class Solution1 with a method twoSum that takes an integer array nums
+and an integer target as input and returns an integer array of length 2 containing
+the indices of the two numbers that add up to the target.
+
+The code uses a nested loop to iterate through all possible pairs of numbers in the array
+and checks if their sum is equal to the target.
+If a pair of numbers is found that satisfies the condition,
+their indices are returned as an array. If no such pair is found, the method returns null.
+
+The time complexity of this solution is O(n^2),
+where n is the length of the input array.
+A follow-up question is posed at the end of the problem,
+which asks if it is possible to come up with an algorithm that has a time complexity less than O(n^2).
