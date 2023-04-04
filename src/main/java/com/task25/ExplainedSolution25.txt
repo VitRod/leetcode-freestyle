@@ -1,0 +1,29 @@
+The problem asks to reverse every group of k nodes in a singly-linked list,
+while preserving the order of the nodes in the list.
+If there are fewer than k nodes left at the end of the list, these nodes should be left as is.
+
+The solution uses a dummy node to simplify the handling of the edge cases.
+The idea is to maintain two pointers start and end, which mark the start and end of a group of k nodes.
+The start pointer is initialized to the dummy node, and the end pointer is initialized to the head of the list.
+
+The algorithm iterates through the list, counting the number of nodes visited so far.
+When the count is a multiple of k, the group of k nodes is reversed using the reverse() method.
+The reverse() method takes two arguments: the start pointer and the node after the end pointer.
+It reverses the group of k nodes between the start and end pointers, and returns the new start pointer,
+ which is the original end pointer of the group.
+
+After reversing the group of k nodes, the start pointer is updated to the new start pointer returned
+by the reverse() method, and the end pointer is updated to the node after the new start pointer.
+If the end of the list is reached before a group of k nodes is found,
+the loop ends and the modified list is returned.
+
+The reverse() method reverses the group of k nodes between the start and end pointers.
+It uses three pointers: prev, curr, and temp. The prev pointer initially points to the node before
+the start pointer, and the curr pointer initially points to the node after the start pointer.
+The temp pointer is used to store the next node to be visited.
+
+The algorithm iterates through the group of k nodes, reversing the links between adjacent nodes.
+When the end of the group is reached, the prev pointer is updated to point to the original end pointer,
+and the start pointer is updated to the original curr pointer.
+Finally, the reverse() method returns the new start pointer,
+which is the original end pointer of the group.
