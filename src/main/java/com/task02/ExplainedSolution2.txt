@@ -1,0 +1,25 @@
+This code is a solution to the "Add Two Numbers" problem on LeetCode,
+which requires adding two non-negative numbers represented as linked lists in reverse order
+and returning the sum as a linked list also in reverse order.
+
+The solution works by iterating through both linked lists simultaneously
+and adding the corresponding digits from each list, along with any carry-over from the previous addition.
+The result of each addition is stored in a new linked list. If there is a carry-over after the final addition,
+ an additional digit is added to the end of the result linked list.
+
+The solution first initializes a new ListNode with a value of zero,
+which is used as a temporary node to keep track of the beginning of the result linked list.
+Two pointers, n1 and n2, are initialized to the heads of the input linked lists l1 and l2.
+Another pointer, t, is initialized to the temporary node.
+The sum variable keeps track of the result of each addition and any carry-over.
+
+The solution then enters a loop that iterates through both linked lists until both pointers are null.
+In each iteration, the sum variable is divided by 10 to remove any carry-over from the previous addition.
+If either n1 or n2 is not null, the value of the current node is added to the sum variable,
+and the corresponding pointer is advanced to the next node. The result of the addition
+ modulo 10 is then added as a new node to the result linked list,
+ and the temporary pointer is advanced to the next node.
+
+Finally, if there is any carry-over left after the loop ends,
+an additional node with a value of 1 is added to the end of the result linked list.
+The temporary node is then returned, starting from the next node after the initial zero node.
