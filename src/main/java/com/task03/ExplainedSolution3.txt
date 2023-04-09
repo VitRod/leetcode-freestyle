@@ -1,0 +1,23 @@
+This is a Java code for solving the "Longest Substring Without Repeating Characters" problem.
+The problem statement is to find the length of the longest substring
+in a given string such that the substring does not contain any repeating characters.
+
+The code starts with some initializations - the length of the longest substring (len),
+ the previous character index (preP), and the maximum length of the substring (max).
+ It then checks for an edge case where the input string is null or has a length of 0.
+ If that's the case, it returns 0.
+
+The code then initializes a hash array of size 128.
+This array will be used to store the index of the last occurrence of each character in the string.
+The loop then iterates through each character in the string. For each character,
+it checks if the character is already present in the current substring
+(by comparing the index of the last occurrence of the character with the index of the previous character).
+If it is present, it updates the preP to the index of the last occurrence of the character.
+ Otherwise, it updates the hash array with the index of the current character.
+
+After updating preP and hash, the code calculates the length of the current substring (l)
+and updates the max if l is greater than the current max. Finally,
+the code returns the max length of the substring.
+
+The time complexity of this solution is O(n), where n is the length of the input string.
+The space complexity is O(1), since the size of the hash array is constant.
