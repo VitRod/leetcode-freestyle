@@ -1,0 +1,29 @@
+This is a Java code for solving the "Median of Two Sorted Arrays" problem.
+The problem asks to find the median of two sorted arrays,
+where the combined length of the arrays can be odd or even.
+The solution needs to have a time complexity of O(log(m+n)).
+
+The solution works by merging the two sorted arrays into a single sorted array,
+ and then calculating the median based on the length of the merged array.
+ The algorithm initializes three pointers, i, j, and k, where i and j
+ are the index of nums1 and nums2 respectively, and k is the index of the merged array.
+
+The solution then iterates through the two arrays, comparing the values at the i-th and j-th indices,
+and adding the smaller one to the merged array. If both values are equal,
+ it adds either one of them to the merged array.
+ The iteration continues until one of the arrays has no more elements left.
+
+After the first iteration, there may be some remaining elements in one of the arrays,
+so the algorithm adds those elements to the end of the merged array. Finally,
+the median is calculated based on the length of the merged array.
+If the length is even, it calculates the average of the two middle elements.
+If the length is odd, it returns the middle element.
+
+The time complexity of this algorithm is O(m+n), which is not optimal.
+However, it is still sufficient to solve the problem within the given constraints.
+There are more efficient algorithms to solve this problem with a time complexity of O(log(m+n)),
+which use binary search.
+
+
+
+

@@ -1,0 +1,22 @@
+This is a Java program that finds the longest palindromic substring in a given string s.
+A palindrome is a string that reads the same backward as forward.
+
+The longestPalindrome method takes in a string s and returns the longest palindromic substring in s.
+The method first checks if the length of s is less than or equal to 1. If it is,
+it returns the original string s.
+
+The method then converts the string to a character array using toCharArray() method,
+which is more efficient for string manipulation.
+
+Next, the method loops through the characters in the string
+and calls the helper function helper(chars, i, i) and helper(chars, i, i+1) to check for odd length
+ and even length palindromes, respectively. The helper function is defined below.
+
+The helper function takes in the character array, chars, and two indices, l and r.
+The indices start at the center of the possible palindrome and expand outwards until they
+are out of bounds or the characters at the indices no longer match.
+If the resulting substring is longer than the current longest palindromic substring,
+the st and end indices are updated to reflect the new substring.
+
+Finally, the method returns the substring of s that starts at index st and ends at index end.
+The returned substring is the longest palindromic substring in the original string s.
