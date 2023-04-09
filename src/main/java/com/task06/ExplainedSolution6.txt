@@ -1,0 +1,30 @@
+This is a Java code for a function called "convert" that takes two inputs,
+ a string "s" and an integer "numRows". The function's purpose is to convert the string "s"
+ into a zigzag pattern with "numRows" rows, and return the converted string.
+
+The first "if" statement checks if "numRows" is less than or equal to 1. If "numRows" is 1,
+ it means that the zigzag pattern will have only one row, which is the same as the original string.
+  In that case, the function returns the original string "s" as is.
+
+Next, the length of the string "s" is stored in the variable "len", and the string "s" is converted
+to a char array called "chars".
+
+The variable "cycle" is set to the cycle length of each row, which is calculated as 2 times
+the difference between "numRows" and 1.
+
+A StringBuilder called "sb" is created to hold the converted string.
+
+The first "for" loop runs through each row of the zigzag pattern. In each row,
+the first character of the row is added to the "sb" StringBuilder.
+
+The second "for" loop runs through each row of the zigzag pattern except the first and last row.
+In each row, the "step" length is set to 2 times the current row number "i".
+Then, the function runs through each character of the row, starting from the second character,
+and adds the character to the "sb" StringBuilder. After each character is added,
+the "step" length is changed to "cycle" minus the current "step" length.
+
+The third "for" loop runs through the last row of the zigzag pattern,
+and adds the last character of each row to the "sb" StringBuilder.
+
+Finally, the "sb" StringBuilder is converted back to a string using the "toString" method
+and returned as the output of the function.
