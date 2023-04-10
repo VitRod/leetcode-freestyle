@@ -28,3 +28,52 @@ and adds the last character of each row to the "sb" StringBuilder.
 
 Finally, the "sb" StringBuilder is converted back to a string using the "toString" method
 and returned as the output of the function.
+
+==========================================================
+The code is an implementation of a problem called "Zigzag Conversion".
+The problem statement is as follows:
+
+Given a string s and an integer numRows, convert the string to a zigzag pattern
+and then read the pattern line by line. The zigzag pattern is formed
+by arranging the characters of the string in a zigzag shape with numRows rows,
+as shown in the examples in the comments of the code.
+The output should be the string formed by reading the zigzag pattern line by line.
+
+The implementation uses a StringBuilder to build the output string.
+The implementation first checks if the numRows is less than or equal to 1,
+in which case it simply returns the original string s. If numRows is greater than 1,
+it calculates the cycle length of each row, which is twice the difference between numRows and 1.
+Then it loops through each row and adds the first character of the row to the StringBuilder.
+ Then it loops through each character of the row (except the first and last character),
+ and adds each character to the StringBuilder.
+ Finally, it adds the last character of the row to the StringBuilder.
+ The implementation returns the StringBuilder as a string.
+
+The code should be able to handle strings of length up to 1000 and numRows up to 1000,
+and the input string s can contain English letters (lower-case and upper-case), ',' and '.'.
+
+===============================================================================
+The code is a Java solution to the "Zigzag Conversion" problem on LeetCode.
+The problem statement describes a pattern of arranging a given string in a zigzag shape,
+and the task is to write a function that takes a string
+and the number of rows in the zigzag pattern and returns the resulting string.
+
+The convert function takes two arguments: a string s and an integer numRows.
+If the value of numRows is less than or equal to 1, the function returns the original string s unchanged.
+ Otherwise, the function initializes some variables
+ and uses a StringBuilder object to build the resulting string.
+
+The function loops through the rows of the zigzag pattern
+and adds the first and last characters of each row to the resulting string.
+For the rows in between the first and last rows,
+the function uses a nested loop to add the characters at the appropriate positions in the row.
+
+The outer loop iterates over the rows, and the inner loop iterates over the characters in each row.
+The step size between the characters in the row is calculated based on the current row number,
+and it alternates between two values depending on the current position in the row.
+
+Finally, the function returns the resulting string
+by calling the toString method on the StringBuilder object.
+
+
+
