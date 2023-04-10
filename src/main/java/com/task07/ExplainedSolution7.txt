@@ -1,0 +1,55 @@
+This code implements a function called "reverse" that takes a signed 32-bit integer x as input
+and returns x with its digits reversed. If reversing x causes the value
+to go outside the signed 32-bit integer range, the function returns 0.
+The constraints for x are -231 <= x <= 231 - 1.
+
+The function works by initializing a variable called "res" to 0.
+It then loops through the digits of x, one by one, by repeatedly dividing x by 10
+and adding the remainder to "res" multiplied by 10. This effectively reverses the digits of x.
+
+Since the reversed value may be outside the range of a 32-bit integer,
+the function checks if the result is larger than the maximum value of a 32-bit integer
+(Integer.MAX_VALUE) or smaller than the minimum value (Integer.MIN_VALUE).
+If it is, the function returns 0. Otherwise, it casts "res" to an integer and returns it.
+ The use of long variables helps avoid integer overflow during the reverse process.
+
+ =================================================================
+This code is a Java solution for the problem of reversing a signed 32-bit integer, given its digits.
+The function reverse takes an integer x as input and returns the integer with its digits reversed.
+
+To solve the problem, the function uses a for loop that iterates as long as x is not equal to zero.
+In each iteration, the loop divides x by 10 to obtain the last digit of x,
+ and then multiplies the current result res by 10 and adds the last digit to get the next digit.
+ This operation effectively reverses the digits of x in the result res.
+
+The variable res is defined as a long to avoid integer overflow,
+since the input and output integers may have up to 10 digits.
+Finally, the function checks whether the reversed integer res is within
+ the range of signed 32-bit integers [-2^31, 2^31 - 1]. If it is not,
+  the function returns 0. Otherwise, it casts res to an integer and returns it.
+
+
+  ===========================================================================
+This is a Java code that solves the "Reverse Integer" problem, a medium-level problem from LeetCode.
+The problem statement describes the task of reversing the digits of a 32-bit signed integer,
+where the result must be within the range of a signed 32-bit integer.
+If the reversed integer is outside the range, the function should return 0.
+
+The class Solution7 has one method reverse that takes an integer x as input
+ and returns an integer as output.
+ The method uses a long variable res to store the result of the reversed integer,
+ which is initialized to 0. This is done to avoid overflow when computing the reverse of x.
+
+The for loop iterates until x becomes 0. In each iteration,
+the loop divides x by 10 to get the last digit of x.
+The last digit is obtained using the modulo operator %, which returns the remainder of x divided by 10.
+The last digit is then added to res multiplied by 10, effectively appending the last digit to res.
+This process is repeated until all digits of x are processed.
+
+Finally, the result res is checked to see if it is within
+the range of a signed 32-bit integer using the constants Integer.MAX_VALUE and Integer.MIN_VALUE.
+If res is outside the range, the function returns 0. Otherwise, res is cast to an int and returned.
+
+
+
+
