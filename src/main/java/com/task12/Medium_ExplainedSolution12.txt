@@ -1,0 +1,61 @@
+1/3
+The given code is a solution to the problem of converting an integer to its Roman numeral representation.
+The code takes an integer 'num' as input and returns a string containing its Roman numeral representation.
+
+The solution makes use of two arrays - 'values' and 'symbols'.
+'values' array contains the integer values of all the Roman numerals from 1000 to 1,
+and 'symbols' array contains the corresponding symbols of these values in Roman numerals.
+
+The code iterates through the 'values' array and checks if the input integer 'num' is greater than
+or equal to the current value in the array.
+If it is, then the code subtracts the value from 'num'
+and appends the corresponding symbol from the 'symbols' array to a StringBuilder 'sb'.
+The loop continues until 'num' becomes zero.
+
+Finally, the StringBuilder 'sb' is converted to a string and returned
+as the Roman numeral representation of the input integer 'num'.
+
+The solution works for all integers between 1 and 3999,
+which are the constraints given in the problem statement.
+
+================================================================================================
+2/3
+  This is a Java code for the problem of converting an integer to a Roman numeral.
+  The program defines a function called "intToRoman"
+  which takes an integer as an input and returns the corresponding Roman numeral as a string.
+
+  To convert the integer to a Roman numeral, the program uses two arrays: "values" and "symbols".
+  The "values" array contains the numerical values of the Roman numerals in descending order,
+  and the "symbols" array contains the corresponding symbols of the Roman numerals.
+
+  The program then iterates through the "values" array using a for loop,
+  and checks if the current value in the array is less than or equal to the input number.
+  If it is, the program subtracts the value from the input number, and appends the corresponding symbol
+  from the "symbols" array to a StringBuilder object called "sb".
+
+  The program continues this process until the input number becomes zero,
+   and then returns the final string representation of the Roman numeral
+   by calling the "toString" method on the "sb" object.
+
+   =====================================================================
+    3/3
+    This code is a Java program that converts an integer into its corresponding Roman numeral representation.
+    The program defines a public method called "intToRoman" that takes an integer as input
+    and returns a String containing the corresponding Roman numeral.
+
+    To perform the conversion, the program uses two arrays: "values" and "symbols".
+    The "values" array contains the integer values of the Roman numerals in descending order.
+    The "symbols" array contains the corresponding Roman numeral symbols in the same order.
+
+    The program then iterates through the "values" array and checks if the input integer is greater than
+    or equal to the current value in the array.
+    If it is, the program subtracts the current value from the input integer
+    and appends the corresponding Roman numeral symbol to a StringBuilder object.
+     This process is repeated until the entire "values" array has been traversed.
+
+    Finally, the program returns the StringBuilder object as a String containing
+    the Roman numeral representation of the input integer.
+
+
+
+
