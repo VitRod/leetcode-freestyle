@@ -1,0 +1,79 @@
+1/3
+This is a Java code for solving the "Container With Most Water" problem, which is described as follows:
+
+Given an integer array "height" of length n,
+where each element "height[i]" represents the height of a vertical line drawn at x-coordinate "i".
+Find two lines that, together with the x-axis, form a container that contains the most water.
+Return the maximum amount of water that the container can hold.
+
+The code uses two pointers "l" and "r" to keep track of the left and right ends of the container.
+It starts with the left pointer at the beginning of the array and the right pointer at the end of the array.
+ It then calculates the area of the container as the minimum of the two heights
+ at the current pointers multiplied by the distance between the pointers.
+ The maximum area is updated if the current area is greater than the current maximum area.
+
+Then, the left and right pointers are moved towards each other to look for a larger area.
+ If the height at the left pointer is less than or equal to the current height,
+ then the left pointer is incremented. Similarly, if the height at the right pointer is less than
+ or equal to the current height, then the right pointer is decremented.
+
+The code terminates when the left pointer becomes greater than or equal to the right pointer.
+Finally, the maximum area is returned as the solution to the problem.
+
+=====================================================================
+2/3
+This code solves the Container With Most Water problem,
+which is to find the maximum amount of water a container can hold given an array of heights.
+The array represents vertical lines drawn at integer points
+ such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+
+The algorithm used in this code is a two-pointer approach. Two pointers, l and r,
+ are used to point to the left and right ends of the array, respectively.
+ The max variable is used to store the maximum area of water that can be contained by the container,
+  and h is used to store the height of the smaller line between the two lines being considered.
+
+The algorithm iterates over the array until the left pointer is less than the right pointer.
+During each iteration, the algorithm calculates the height of the smaller line
+ between the two lines being considered, h, and then calculates the area of the container formed
+ by these two lines.
+ The max variable is updated with the maximum of its current value and the newly calculated area.
+
+The algorithm then moves the pointer that is pointing to the smaller line
+towards the center of the array until it reaches a line that is taller than h,
+or until the pointers meet.
+This process continues until the pointers meet or cross each other,
+at which point the algorithm returns the maximum area that was found.
+
+=================================================================
+3/3
+  This code is a solution to the Container With Most Water problem,
+   which involves finding the maximum amount of water that can be contained
+    by a container formed by two vertical lines on a given set of vertical lines.
+    The input is an integer array of heights of the vertical lines,
+     and the output is the maximum area of water that can be contained by any two lines.
+
+  The solution uses two pointers, one at the beginning of the array and the other at the end of the array.
+   It also initializes a variable to keep track of the maximum area and a variable
+   to store the height of the current container.
+
+  The algorithm then enters a while loop where it compares the heights of the two vertical lines
+  pointed by the left and right pointers and takes the smaller height as the height of the current container.
+  It then calculates the area of the current container using the distance between
+  the two pointers and the height of the current container,
+  and updates the maximum area if the current area is greater than the previous maximum area.
+
+  The algorithm then updates the pointers by moving the left pointer
+  to the right if the height of the left vertical line is less than
+  or equal to the height of the current container,
+  and by moving the right pointer to the left if the height of the right vertical line is less than
+  or equal to the height of the current container.
+  This process continues until the left pointer is no longer less than the right pointer.
+
+  Finally, the algorithm returns the maximum area calculated during the process.
+
+
+
+
+
+
+
