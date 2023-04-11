@@ -1,0 +1,83 @@
+1/3
+This is a Java program that converts a Roman numeral string to an integer.
+The program uses a map to store the Roman numeral symbols and their corresponding values.
+ It then iterates through the input string in reverse order and calculates the integer value
+ by subtracting or adding the corresponding value of each Roman numeral symbol depending
+ on whether the current symbol is smaller or greater than the previous symbol.
+ Finally, it returns the calculated sum as the output.
+
+The program defines a public class called Solution13 that contains a single method called romanToInt.
+The romanToInt method takes a string parameter representing the Roman numeral to be converted
+and returns an integer value.
+
+The program first initializes a map with the seven Roman numeral symbols and their corresponding values.
+ It then creates a new string by reversing the input string,
+ which allows the program to iterate through the string in reverse order.
+
+The program then initializes two variables: sum and prev.
+ The sum variable is used to store the accumulated integer value,
+ and the prev variable is used to store the value of the previous Roman numeral symbol encountered
+ during iteration.
+
+The program then iterates through the reversed string using a for loop.
+For each character in the string, it retrieves its corresponding integer value from the map
+ and stores it in the curr variable. It then checks if the curr value is less than the prev value.
+  If it is, the program subtracts curr from the sum variable since the current Roman numeral symbol
+  represents a smaller value than the previous symbol.
+   Otherwise, it adds curr to the sum variable since the current symbol represents a larger value
+   than the previous symbol. After each iteration,
+    the program sets the prev variable to the curr value to use it in the next iteration.
+
+Finally, the program returns the sum variable as the output,
+ which represents the integer value of the input Roman numeral string.
+
+ =================================================================================================
+ 2/3
+ This code is a solution to the "Roman to Integer" problem on LeetCode.
+ The problem statement describes how Roman numerals
+ are represented by seven different symbols
+ and provides a table mapping each symbol to its corresponding value.
+ The goal of the problem is to convert a given Roman numeral string to an integer.
+
+ The solution uses a Map to store the mapping between each Roman numeral symbol
+ and its corresponding value. It then reverses the input string and iterates through it from left to right,
+  adding or subtracting the value of each symbol from the sum based
+  on whether it is greater than or less than the previous symbol encountered.
+
+ For example, if the input string is "IV", the loop will first encounter 'V',
+ which has a value of 5. Since 'V' is greater than the previous symbol ('I', which has a value of 1),
+ the solution adds 5 to the sum. It then encounters 'I', which has a value of 1. Since 'I'
+ is less than the previous symbol ('V'), the solution subtracts 1 from the sum. The final result is 4.
+
+ The solution returns the sum as the final result of the function.
+
+=================================================================================================
+3/3
+This code is a solution to the problem of converting a Roman numeral to an integer.
+It defines a class Solution13 with a method romanToInt that takes a string s representing the
+Roman numeral and returns an integer.
+
+The Roman numeral system is based on seven symbols: I, V, X, L, C, D, and M,
+ each of which has a corresponding numerical value. The method creates a HashMap to store
+ these mappings from symbols to values.
+
+The input string s is reversed using the StringBuilder class to make it easier
+ to process the numerals from right to left. The method initializes a variable sum to 0
+ and a variable prev to -1 to keep track of the previous numeral processed.
+
+The method then iterates through the reversed string, looking up the value of each numeral in the HashMap.
+If the value of the current numeral is less than the previous numeral,
+it subtracts the current value from the sum. Otherwise, it adds the current value to the sum.
+Finally, it sets the previous value to the current value.
+
+After the loop finishes, the method returns the sum as the integer equivalent of the Roman numeral.
+
+
+
+
+
+
+
+
+
+
