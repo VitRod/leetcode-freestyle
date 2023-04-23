@@ -1,0 +1,85 @@
+1/3
+
+This is a Java program that defines a class Solution14 with a public method longestCommonPrefix
+that takes an array of strings as input and returns a string.
+The program finds the longest common prefix string among the array of strings.
+If there is no common prefix, it returns an empty string.
+
+The program first checks if the input array is empty or not.
+If the array is empty, it returns an empty string. Otherwise,
+it initializes the result string with the first string in the array.
+
+Then, it loops through all the strings in the input array.
+For each string, it loops through the characters of the result string and the current string.
+If the characters at the same index are not equal,
+it cuts off the result string up to that index and breaks out of the loop.
+
+Finally, it returns the result string, which is the longest common prefix among the input strings.
+
+================================================================================================
+2/2
+This code is a Java implementation of a solution to the "Longest Common Prefix" problem,
+ which is a popular coding problem categorized as "Easy".
+ The problem statement is to find the longest common prefix among an array of strings.
+
+The code starts with a class named "Solution14".
+It has a public method called "longestCommonPrefix" which takes an array of strings,
+"strs", as input and returns a string as output.
+
+The first line of the method checks for an edge case where the length of the input array "strs" is 0.
+If this is the case, it returns an empty string "" as there is no common prefix among an empty array of strings.
+
+The code then initializes a string variable called "result" with the first string in the input array "strs".
+ This is done to have a base string to compare with other strings in the array.
+
+The code then uses two nested loops to compare each character of the strings
+ in the array with the characters in the "result" string.
+  The outer loop iterates through each string in the array "strs",
+  and the inner loop iterates through each character in the "result" string.
+
+Inside the inner loop, it checks if the current index "j" is out of range for the current string "s"
+or if the character at the current index "j" in the "result" string
+is not equal to the character at the same index "j" in the current string "s".
+If either of these conditions is true, it means that the common prefix has ended,
+so the code cuts off the "result" string using the "substring" method from index 0 to index "j" (exclusive)
+ to get the common prefix until that point.
+ Then it breaks out of the inner loop to move on to the next string in the array.
+
+The process continues for all strings in the array, and at the end of the loops,
+the "result" string will contain the longest common prefix among all the strings in the input array.
+
+Finally, the "result" string is returned as the output of the method,
+which represents the longest common prefix among the input strings.
+If there is no common prefix, the "result" string would be an empty string "".
+
+================================================================================================
+3/3
+This is Java code for solving the "Longest Common Prefix" problem.
+The problem statement is to find the longest common prefix string amongst an array of strings.
+If there is no common prefix, return an empty string.
+
+The code defines a class called "Solution14" which contains a public method
+called "longestCommonPrefix" that takes an array of strings
+as input and returns the longest common prefix string.
+
+The method first checks if the array is empty,
+in which case it returns an empty string.
+If the array is not empty, it initializes the "result" string with the first string in the array.
+
+The method then loops through all the strings in the array and for each string,
+it loops through the characters in the "result" string.
+If the character at the same position in the current string
+is not equal to the character in the "result" string,
+ or if the loop reaches the end of the current string,
+ it cuts off the "result" string up to the current position and breaks out of the loop.
+
+At the end of the loops, the method returns the "result" string,
+which is the longest common prefix among all the strings in the array.
+
+
+
+
+
+
+
+

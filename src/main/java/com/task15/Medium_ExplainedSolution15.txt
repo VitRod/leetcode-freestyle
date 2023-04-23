@@ -1,0 +1,133 @@
+1/3
+This is a Java program that solves the "3Sum" problem.
+The problem is described in the comments at the beginning of the code.
+Given an array of integers, the program returns all the triplets of numbers in the array whose sum is zero,
+while making sure that the solution set does not contain duplicate triplets.
+
+The program uses a brute-force approach to solve the problem.
+It loops through the array and tries all possible combinations of three integers,
+checking if their sum is zero.
+To avoid duplicate triplets, the program sorts the array and skips over duplicate values.
+
+The program takes an array of integers as input and returns a list of lists,
+where each inner list contains three integers that add up to zero.
+If there are no such triplets, the program returns an empty list.
+
+The program begins by creating an empty list called "result".
+It checks if the length of the input array is less than 3,
+and if so, returns an empty list. Otherwise, it sorts the array using the Arrays.sort() method.
+
+The program then loops through the array using a for loop.
+For each element in the array, it skips over duplicates
+and then initializes two pointers called "left" and "right".
+The left pointer starts at the element after the current element,
+and the right pointer starts at the end of the array.
+
+The program then enters a while loop, where it checks if the sum of the current element,
+ the left pointer, and the right pointer is zero.
+ If so, it adds the triplet to the "result" list
+ and moves both pointers towards the center of the array, skipping over any duplicates.
+
+If the sum is less than zero,
+the program moves the left pointer to the right,
+and if the sum is greater than zero, the program moves the right pointer to the left.
+
+After the loops have completed, the program returns the "result" list.
+
+========================================================================================================================
+ 2/3
+ This code is a Java implementation of the "3Sum" problem,
+ which is a commonly asked coding problem in interviews. The problem statement is as follows:
+ Given an integer array nums, the task is to find all unique triplets [nums[i], nums[j], nums[k]]
+ such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+ The goal is to return a list of lists containing these triplets.
+ The code uses a two-pointer approach to solve the problem efficiently. Here's how it works:
+ 1.	First, a result list of lists is initialized to store the triplets.
+ 2.	The length of the input array nums is checked, and if it's less than 3,
+  an empty list is returned as there can't be any valid triplet in this case.
+ 3.	The input array nums is sorted using Arrays.sort() method,
+ which helps in efficiently skipping duplicates and finding solutions.
+ 4.	A for loop is used to iterate through the input array nums from the beginning up to the third-last element.
+ This is because we need at least 3 elements to form a triplet.
+ 5.	Inside the loop, duplicates are skipped using an if condition that checks
+ if the current element is the same as the previous element.
+  If so, the loop continues to the next iteration to avoid duplicate triplets.
+ 6.	Two pointers, left and right,
+ are initialized to the next element after the current element
+ and the last element of the array, respectively.
+ 7.	A while loop is used to find triplets that sum to zero.
+ Inside the loop, the sum of the current triplet is calculated.
+ 8.	If the sum is equal to zero, the triplet is added to the result list
+  using Arrays.asList() method.
+   Then, the left pointer is incremented and the right pointer is decremented to check for more triplets.
+ 9.	Duplicate triplets are skipped using while loops that check
+ if the next elements of left and right are the same as their previous elements.
+ If so, the pointers are moved to the next unique elements.
+ 10.	If the sum is less than zero, the left pointer is incremented to move towards a larger value.
+ 11.	If the sum is greater than zero, the right pointer is decremented to move towards a smaller value.
+ 12.	After the while loop completes, the for loop moves to the next element,
+ and the process continues until all possible triplets are checked.
+ 13.	Finally, the result list containing all the unique triplets that sum to zero
+ is returned as the output.
+ The code takes care of edge cases, skips duplicates,
+ and uses two pointers to efficiently find all valid triplets that sum to zero in the input array nums.
+
+ ========================================================================================================================
+ 3/3
+ This is a Java code that solves the 3Sum problem.
+ Given an integer array nums, the code finds all the unique triplets [nums[i], nums[j], nums[k]] such
+  that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+  The solution set must not contain duplicate triplets.
+
+ The code creates a function called threeSum which takes an integer array nums as input
+ and returns a list of lists of integers as output.
+ The outer list contains all the unique triplets
+ and each inner list contains the three numbers that sum up to zero.
+
+ First, the code checks if the length of nums is less than 3,
+ which means there cannot be any triplets, so it returns an empty list.
+  Otherwise, the code sorts the array in ascending order.
+  Then, it loops through the array from index 0 to the second last index. Within the loop,
+  the code skips duplicates by checking if the current element is the same as the previous element.
+   If yes, the code continues to the next iteration of the loop.
+   Otherwise, the code sets two pointers, left and right, to the next element
+   and the last element of the array, respectively.
+
+ The code then enters another loop while the left pointer is less than the right pointer.
+ Within this loop, the code calculates the sum of the three elements at the current indices.
+ If the sum is zero, the code adds the triplet to the result list
+ and moves the left pointer to the next distinct element (skipping duplicates)
+ and the right pointer to the previous distinct element (skipping duplicates).
+ If the sum is less than zero, the code increments the left pointer.
+  If the sum is greater than zero, the code decrements the right pointer.
+
+ Finally, the code returns the result list containing all the unique triplets that sum up to zero.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
